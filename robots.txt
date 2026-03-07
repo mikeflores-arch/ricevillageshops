@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /images/download.sh
+
+Sitemap: https://ricevillageshops.com/sitemap.xml
