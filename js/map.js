@@ -123,18 +123,30 @@ function createMarkers() {
   });
 }
 
+// Escape HTML to prevent XSS in map info windows
+function escapeMapHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 // Create info window HTML content
 function createInfoContent(listing) {
   const categoryClass = `map-info__category--${listing.category}`;
   const label = categoryLabels[listing.category] || listing.category;
+  const safeName = escapeMapHtml(listing.name);
+  const safeSubcat = escapeMapHtml(listing.subcategory);
+  const safeAddr = escapeMapHtml(listing.address);
+  const safeDesc = escapeMapHtml(listing.description);
+  const encodedName = encodeURIComponent(listing.name);
 
   return `
     <div class="map-info">
-      <div class="map-info__name">${listing.name}</div>
-      <span class="map-info__category ${categoryClass}">${label} &middot; ${listing.subcategory}</span>
-      <div class="map-info__address">${listing.address}</div>
-      <div class="map-info__desc">${listing.description}</div>
-      <a href="#directory" class="map-info__link" onclick="scrollToListing('${listing.name.replace(/'/g, "\\'")}')">View in Directory &rarr;</a>
+      <div class="map-info__name">${safeName}</div>
+      <span class="map-info__category ${categoryClass}">${label} &middot; ${safeSubcat}</span>
+      <div class="map-info__address">${safeAddr}</div>
+      <div class="map-info__desc">${safeDesc}</div>
+      <a href="#directory" class="map-info__link" onclick="scrollToListing(decodeURIComponent('${encodedName}'))">View in Directory &rarr;</a>
     </div>
   `;
 }

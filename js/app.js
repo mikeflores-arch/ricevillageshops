@@ -382,7 +382,7 @@
   }
 
   function escapeAttr(str) {
-    return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\/g, '&#92;').replace(/`/g, '&#96;');
   }
 
   // ============================================
@@ -951,6 +951,15 @@
     }
   }
 
+  function isValidUrl(url) {
+    try {
+      const parsed = new URL(url);
+      return parsed.protocol === 'https:' || parsed.protocol === 'http:';
+    } catch (e) {
+      return false;
+    }
+  }
+
   function populateAdSlot(slotContent, imageSrc, linkUrl) {
     if (!imageSrc) return;
     const slot = slotContent.closest('.ad-slot');
@@ -960,20 +969,18 @@
     }
 
     slotContent.innerHTML = '';
-    if (linkUrl) {
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = 'Advertisement';
+
+    if (linkUrl && isValidUrl(linkUrl)) {
       const a = document.createElement('a');
       a.href = linkUrl;
       a.target = '_blank';
       a.rel = 'noopener sponsored';
-      const img = document.createElement('img');
-      img.src = imageSrc;
-      img.alt = 'Advertisement';
       a.appendChild(img);
       slotContent.appendChild(a);
     } else {
-      const img = document.createElement('img');
-      img.src = imageSrc;
-      img.alt = 'Advertisement';
       slotContent.appendChild(img);
     }
   }

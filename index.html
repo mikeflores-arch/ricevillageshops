@@ -805,10 +805,12 @@
     var grid = document.getElementById('homeBlogGrid');
     if (!grid || typeof blogPosts === 'undefined') return;
     var cats = {all:'All',events:'Events','food-drink':'Food & Drink',shopping:'Shopping',culture:'Culture',guides:'Guides'};
+    function esc(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+    function escA(s){ return esc(s).replace(/"/g,'&quot;'); }
     function fmtDate(d){ return new Date(d+'T00:00:00').toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}); }
     var posts = blogPosts.slice(0, 3);
     grid.innerHTML = posts.map(function(p){
-      return '<a href="blog/' + p.slug + '.html" class="blog-card"><div class="blog-card__image"><img src="' + p.image + '" alt="' + p.title + '" loading="lazy"></div><div class="blog-card__body"><span class="blog-card__category blog-card__category--' + p.category + '">' + (cats[p.category]||p.category) + '</span><h2 class="blog-card__title">' + p.title + '</h2><p class="blog-card__excerpt">' + p.excerpt + '</p><div class="blog-card__meta"><span class="blog-card__date">' + fmtDate(p.date) + '</span><span class="blog-card__dot">&middot;</span><span class="blog-card__readtime">' + p.readTime + '</span></div></div></a>';
+      return '<a href="blog/' + encodeURIComponent(p.slug) + '.html" class="blog-card"><div class="blog-card__image"><img src="' + escA(p.image) + '" alt="' + escA(p.title) + '" loading="lazy"></div><div class="blog-card__body"><span class="blog-card__category blog-card__category--' + escA(p.category) + '">' + esc(cats[p.category]||p.category) + '</span><h2 class="blog-card__title">' + esc(p.title) + '</h2><p class="blog-card__excerpt">' + esc(p.excerpt) + '</p><div class="blog-card__meta"><span class="blog-card__date">' + esc(fmtDate(p.date)) + '</span><span class="blog-card__dot">&middot;</span><span class="blog-card__readtime">' + esc(p.readTime) + '</span></div></div></a>';
     }).join('');
   })();
   </script>
