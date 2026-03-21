@@ -113,7 +113,7 @@
     const imgSrc = getListingImage(listing);
 
     return `
-      <article class="card" data-name="${escapeAttr(listing.name)}" onclick="openDetail('${escapeAttr(listing.name)}')" style="cursor:pointer;">
+      <article class="card" data-name="${escapeAttr(listing.name)}" onclick="openDetail('${escapeJS(listing.name)}')" style="cursor:pointer;">
         <div class="card__image">
           <img src="${imgSrc}" alt="${escapeAttr(listing.name)} — ${escapeAttr(listing.subcategory)} in Rice Village Houston" loading="lazy" onerror="this.src='images/logos/Listing-Placeholder.png'">
           <span class="card__badge ${badgeClass}">${label}</span>
@@ -383,6 +383,10 @@
 
   function escapeAttr(str) {
     return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\\/g, '&#92;').replace(/`/g, '&#96;');
+  }
+
+  function escapeJS(str) {
+    return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '\\"');
   }
 
   // ============================================
