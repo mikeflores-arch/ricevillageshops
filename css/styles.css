@@ -3,6 +3,23 @@
    Modern, clean, Airbnb/Yelp-inspired design
    ============================================ */
 
+/* ----- Skip Link (Accessibility) ----- */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 10000;
+  padding: 12px 24px;
+  background: var(--color-primary, #2563eb);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 /* ----- Custom Properties ----- */
 :root {
   --color-primary: #2563eb;
