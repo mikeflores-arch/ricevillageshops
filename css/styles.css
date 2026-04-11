@@ -2673,3 +2673,15 @@ input { font-family: inherit; }
     padding: 24px 16px;
   }
 }
+
+/* ----- Google AdSense Ad Containers ----- */
+.ad-container {
+  margin: 2rem auto;
+  padding: 1rem 0;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1200px;
+}
+.ad-container ins {
+  display: block;
+}
