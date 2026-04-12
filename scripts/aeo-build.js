@@ -135,6 +135,123 @@ const FAQ_DATA = {
   ],
 };
 
+// ─── Event schema data ───────────────────────────────────────────
+const EVENT_DATA = {
+  'houston-rodeo-guide-rice-village': [
+    {
+      name: 'Houston Livestock Show and Rodeo',
+      description: 'The world\'s largest livestock exhibition and rodeo, featuring concerts, carnival rides, barbecue cook-offs, and livestock shows at NRG Stadium in Houston, TX.',
+      startDate: '2026-02-24',
+      endDate: '2026-03-22',
+      location: { name: 'NRG Stadium', address: 'NRG Pkwy, Houston, TX 77054' },
+      url: 'https://www.rodeohouston.com',
+      organizer: 'Houston Livestock Show and Rodeo',
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      image: 'https://ricevillageshops.com/images/blog/houston-rodeo-guide.jpg',
+    },
+  ],
+  'first-thursday-art-walk': [
+    {
+      name: 'Rice Village First Thursday Art Walk',
+      description: 'Monthly community art event in Rice Village, Houston featuring gallery exhibitions, live music, pop-up vendors, and special restaurant menus. Free admission.',
+      startDate: '2026-05-07T18:00',
+      endDate: '2026-05-07T21:00',
+      location: { name: 'Rice Village', address: 'Rice Village, Houston, TX 77005' },
+      eventSchedule: {
+        '@type': 'Schedule',
+        byDay: 'http://schema.org/Thursday',
+        repeatFrequency: 'P1M',
+        startDate: '2026-01-01',
+        endDate: '2026-12-31',
+      },
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      isAccessibleForFree: true,
+      image: 'https://ricevillageshops.com/images/blog/first-thursday-art-walk.jpg',
+    },
+  ],
+  'rice-village-farmers-market-weekend-events': [
+    {
+      name: 'Rice Village Farmers Market',
+      description: 'Local farmers market in Rice Village, Houston featuring fresh produce, artisan foods, baked goods, handmade crafts, and food trucks. Free admission, family-friendly.',
+      startDate: '2026-04-19T08:00',
+      endDate: '2026-04-19T12:00',
+      location: { name: 'Rice Village', address: 'Rice Village, Houston, TX 77005' },
+      eventSchedule: {
+        '@type': 'Schedule',
+        byDay: 'http://schema.org/Saturday',
+        repeatFrequency: 'P1W',
+        startDate: '2026-01-01',
+        endDate: '2026-12-31',
+      },
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      isAccessibleForFree: true,
+      image: 'https://ricevillageshops.com/images/blog/farmers-market.jpg',
+    },
+  ],
+  'houston-restaurant-weeks-rice-village': [
+    {
+      name: 'Houston Restaurant Weeks',
+      description: 'Annual charity dining event featuring prix-fixe lunch and dinner menus at top Houston restaurants. Proceeds benefit the Houston Food Bank.',
+      startDate: '2026-08-01',
+      endDate: '2026-09-07',
+      location: { name: 'Various Rice Village Restaurants', address: 'Rice Village, Houston, TX 77005' },
+      url: 'https://www.houstonrestaurantweeks.com',
+      organizer: 'Houston Restaurant Weeks',
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      image: 'https://ricevillageshops.com/images/blog/houston-restaurant-weeks.jpg',
+    },
+  ],
+  'houston-food-festivals-2026': [
+    {
+      name: 'World\'s Championship Bar-B-Que Contest',
+      description: 'The world\'s largest barbecue cook-off held during the Houston Livestock Show and Rodeo at NRG Park.',
+      startDate: '2026-02-19',
+      endDate: '2026-02-21',
+      location: { name: 'NRG Park', address: 'NRG Pkwy, Houston, TX 77054' },
+      url: 'https://www.rodeohouston.com',
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      image: 'https://ricevillageshops.com/images/blog/food-festivals.jpg',
+    },
+    {
+      name: 'Houston Wine & Food Week',
+      description: 'Week-long celebration of Houston\'s culinary scene featuring wine dinners, chef collaborations, and grand tastings.',
+      startDate: '2026-04-13',
+      endDate: '2026-04-19',
+      location: { name: 'Various Houston Locations', address: 'Houston, TX' },
+      eventAttendanceMode: 'OfflineEventAttendanceMode',
+      image: 'https://ricevillageshops.com/images/blog/food-festivals.jpg',
+    },
+  ],
+};
+
+function buildEventSchema(events) {
+  const schemas = events.map(e => {
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Event',
+      name: e.name,
+      description: e.description,
+      startDate: e.startDate,
+      location: {
+        '@type': 'Place',
+        name: e.location.name,
+        address: { '@type': 'PostalAddress', streetAddress: e.location.address },
+      },
+      eventAttendanceMode: `https://schema.org/${e.eventAttendanceMode}`,
+    };
+    if (e.endDate) schema.endDate = e.endDate;
+    if (e.url) schema.url = e.url;
+    if (e.image) schema.image = e.image;
+    if (e.isAccessibleForFree) schema.isAccessibleForFree = true;
+    if (e.organizer) {
+      schema.organizer = { '@type': 'Organization', name: e.organizer };
+    }
+    if (e.eventSchedule) schema.eventSchedule = e.eventSchedule;
+    return schema;
+  });
+  return schemas;
+}
+
 // ─── Determine which posts are "list" posts that need ItemList schema ────
 const LIST_POSTS = new Set([
   'best-coffee-shops-rice-village',
@@ -245,7 +362,20 @@ for (const file of files) {
     }
   }
 
-  // 5. Add question-format H2 IDs for anchor linking (for ItemList URLs)
+  // 5. Add Event schema for event posts
+  const events = EVENT_DATA[slug];
+  if (events) {
+    // Remove old Event schema
+    html = html.replace(/\s*<!-- AEO: Event -->\s*<script type="application\/ld\+json">[\s\S]*?<\/script>\s*(?=<)/g, '');
+
+    const eventSchemas = buildEventSchema(events);
+    for (const schema of eventSchemas) {
+      const eventBlock = `\n  <!-- AEO: Event -->\n  <script type="application/ld+json">\n  ${JSON.stringify(schema, null, 2)}\n  </script>\n`;
+      html = html.replace('</head>', eventBlock + '</head>');
+    }
+  }
+
+  // 6. Add question-format H2 IDs for anchor linking (for ItemList URLs)
   // Add id attributes to h2 tags in the inlined content
   html = html.replace(/<article class="article-content" id="articleContent">([\s\S]*?)<\/article>/, (match, content) => {
     const updated = content.replace(/<h2>(.*?)<\/h2>/g, (h2Match, text) => {
