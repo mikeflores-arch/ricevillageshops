@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSPTB0HJ97');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title id="pageTitle">Loading... — Rice Village Blog</title>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Rice Village Shops">
+  <meta id="metaDesc" name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-icon">&#9670;</span>
+        Rice Village
+      </a>
+      <ul class="nav__links">
+        <li><a href="/#directory" class="nav__link" data-category="all">All</a></li>
+        <li><a href="/#directory" class="nav__link" data-category="restaurant">Restaurants</a></li>
+        <li><a href="/#directory" class="nav__link" data-category="bar">Bars</a></li>
+        <li><a href="/#directory" class="nav__link" data-category="coffee">Coffee</a></li>
+        <li><a href="/#directory" class="nav__link" data-category="shopping">Shopping</a></li>
+        <li><a href="/#directory" class="nav__link" data-category="museum">Museums</a></li>
+        <li><a href="/blog.html" class="nav__link nav__link--active">Blog</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu__links">
+        <li><a href="/#directory" class="mobile-menu__link">All</a></li>
+        <li><a href="/#directory" class="mobile-menu__link">Restaurants</a></li>
+        <li><a href="/#directory" class="mobile-menu__link">Bars</a></li>
+        <li><a href="/#directory" class="mobile-menu__link">Coffee</a></li>
+        <li><a href="/#directory" class="mobile-menu__link">Shopping</a></li>
+        <li><a href="/#directory" class="mobile-menu__link">Museums</a></li>
+        <li><a href="/blog.html" class="mobile-menu__link mobile-menu__link--active">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <article class="blog-post" id="blogPost">
+      <div class="blog-post__loading container" id="postLoading">
+        <div class="spinner"></div>
+        <p>Loading post...</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="footer__logo">
+            <span class="footer__logo-icon">&#9670;</span>
+            Rice Village
+          </a>
+          <p class="footer__desc">Houston's oldest and most beloved shopping district since 1937.</p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#map-section">Map</a></li>
+            <li><a href="/#directory">Directory</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contact</h4>
+          <ul>
+            <li>Rice Village, Houston, TX 77005</li>
+            <li><a href="mailto:info@ricevillageshops.com">info@ricevillageshops.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Rice Village Shops. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function() {
+    const categoryLabels = {all:'All',events:'Events','food-drink':'Food & Drink',shopping:'Shopping',culture:'Culture',guides:'Guides'};
+
+    // Extract slug from URL path: /blog/my-post or /blog/my-post.html
+    function getSlug() {
+      const path = window.location.pathname;
+      const match = path.match(/\/blog\/([^/]+?)(?:\.html)?$/);
+      return match ? match[1] : null;
+    }
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+
+    function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    async function loadPost() {
+      const slug = getSlug();
+      if (!slug) {
+        document.getElementById('postLoading').innerHTML = '<p>Post not found. <a href="/blog.html">Back to Blog</a></p>';
+        return;
+      }
+
+      try {
+        const res = await fetch('/api/blog?slug=' + encodeURIComponent(slug));
+        if (!res.ok) throw new Error('Not found');
+        const post = await res.json();
+
+        // Update page meta
+        document.getElementById('pageTitle').textContent = post.title + ' — Rice Village Blog';
+        document.getElementById('metaDesc').content = post.excerpt;
+
+        // Render post
+        const article = document.getElementById('blogPost');
+        article.innerHTML = `
+          <div class="blog-post__hero">
+            <div class="blog-post__hero-bg" style="background-image:url('${esc(post.image)}')"></div>
+            <div class="blog-post__hero-content container">
+              <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb__sep">/</span>
+                <a href="/blog.html">Blog</a>
+                <span class="breadcrumb__sep">/</span>
+                <span>${esc(post.title)}</span>
+              </nav>
+              <span class="blog-card__category blog-card__category--${esc(post.category)}">${esc(categoryLabels[post.category] || post.category)}</span>
+              <h1 class="blog-post__title">${esc(post.title)}</h1>
+              <div class="blog-post__meta">
+                <span>${esc(post.author || 'Rice Village Shops')}</span>
+                <span class="blog-card__dot">&middot;</span>
+                <span>${formatDate(post.published_at || post.date)}</span>
+                <span class="blog-card__dot">&middot;</span>
+                <span>${esc(post.read_time)}</span>
+              </div>
+            </div>
+          </div>
+          <div class="blog-post__body container">
+            <div class="blog-post__content">${post.content}</div>
+          </div>
+        `;
+      } catch (err) {
+        // Fallback: try loading from blog-data.js (for static blog posts)
+        document.getElementById('postLoading').innerHTML = '<p>Post not found. <a href="/blog.html">Back to Blog</a></p>';
+      }
+    }
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 20);
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+
+    loadPost();
+  })();
+  </script>
+</body>
+</html>

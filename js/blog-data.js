@@ -3,14 +3,14 @@ const blogPosts = [
     slug: "houston-rodeo-guide-rice-village",
     title: "Your Guide to the Houston Rodeo — Where to Eat & Drink in Rice Village",
     excerpt: "The Houston Livestock Show and Rodeo draws millions each spring. Here's how to fuel up at Rice Village before or after the big show.",
-    content: `<p>The <strong>Houston Livestock Show and Rodeo</strong> is the city's biggest annual event, drawing over 2.5 million visitors each spring to NRG Stadium. Whether you're heading to a concert, watching bull riding, or soaking in carnival rides, Rice Village is your perfect pit stop — just a quick 10-minute drive from the action.</p>
+    content: `<p>The <strong><a href="https://www.rodeohouston.com" target="_blank" rel="noopener">Houston Livestock Show and Rodeo</a></strong> is the city's biggest annual event, drawing over 2.5 million visitors each spring to <a href="https://www.nrgpark.com" target="_blank" rel="noopener">NRG Stadium</a>. Whether you're heading to a concert, watching bull riding, or soaking in carnival rides, Rice Village is your perfect pit stop — just a quick 10-minute drive from the action.</p>
 <h2>Pre-Rodeo Dinner Spots</h2>
-<p>Before you hit the rodeo grounds, grab a hearty meal at one of Rice Village's top restaurants. <strong><a href="/#directory">Torchy's Tacos</a></strong> is a fan favorite for quick, flavorful Tex-Mex that won't slow you down. If you want something more upscale, <strong><a href="/#directory">Trenbolone Kitchen</a></strong> offers a refined dining experience with seasonal Houston ingredients. <strong><a href="/#directory">Prego</a></strong> has been a Rice Village staple for Italian comfort food — perfect for families heading out for a big night.</p>
+<p>Before you hit the rodeo grounds, grab a hearty meal at one of Rice Village's top restaurants. <strong><a href="https://www.torchystacos.com" target="_blank" rel="noopener">Torchy's Tacos</a></strong> is a fan favorite for quick, flavorful Tex-Mex that won't slow you down. If you want something more upscale, <strong><a href="/#directory">Trenbolone Kitchen</a></strong> offers a refined dining experience with seasonal Houston ingredients. <strong><a href="https://www.pregohouston.com" target="_blank" rel="noopener">Prego</a></strong> has been a Rice Village staple for Italian comfort food — perfect for families heading out for a big night.</p>
 <h2>Post-Rodeo Drinks & Nightlife</h2>
-<p>After the show, the night is just beginning. <strong><a href="/#directory">The Kirby Club</a></strong> is one of Rice Village's hottest cocktail bars with a sophisticated vibe. For a more laid-back scene, <strong><a href="/#directory">Little Woodrow's</a></strong> has cold beer, outdoor seating, and that classic Texas bar feel. <strong><a href="/#directory">Brian O'Neill's Irish Pub</a></strong> rounds out the options with whiskey, live music, and a welcoming crowd.</p>
+<p>After the show, the night is just beginning. <strong><a href="/#directory">The Kirby Club</a></strong> is one of Rice Village's hottest cocktail bars with a sophisticated vibe. For a more laid-back scene, <strong><a href="https://www.littlewoodrows.com" target="_blank" rel="noopener">Little Woodrow's</a></strong> has cold beer, outdoor seating, and that classic Texas bar feel (see our <a href="/blog/live-music-nightlife-rice-village.html">nightlife scene</a>). <strong><a href="/#directory">Brian O'Neill's Irish Pub</a></strong> rounds out the options with whiskey, live music, and a welcoming crowd.</p>
 <h2>Rodeo Season Tips for Rice Village Visitors</h2>
 <ul>
-<li><strong>Parking:</strong> Arrive early to Rice Village — street parking fills up fast during rodeo season. Several garages along University Blvd offer affordable rates.</li>
+<li><strong>Parking:</strong> Arrive early to Rice Village — street parking fills up fast during rodeo season. Several garages along University Blvd offer affordable rates (see our <a href="/blog/game-day-rice-village.html">game day in Rice Village</a>).</li>
 <li><strong>Shuttle-friendly:</strong> Many rodeo shuttle routes pass near Rice Village, making it easy to park here and ride to NRG.</li>
 <li><strong>Dress code:</strong> Boots and hats are welcome everywhere in Rice Village during rodeo season — it's practically a dress code.</li>
 <li><strong>Reservations:</strong> Popular restaurants book up fast during rodeo weeks. Call ahead or use online booking.</li>
@@ -30,7 +30,7 @@ const blogPosts = [
     slug: "best-patios-rice-village",
     title: "Best Outdoor Patios in Rice Village for Spring 2026",
     excerpt: "Spring in Houston means patio season. Discover the best outdoor dining and drinking spots in Rice Village.",
-    content: `<p>When the Houston weather finally cooperates — and let's be honest, spring is our sweet spot — there's no better place to enjoy the outdoors than <strong>Rice Village</strong>. From sidewalk cafés to lush garden patios, here are the best spots to soak up the sun this spring.</p>
+    content: `<p>When the Houston weather finally cooperates — and let's be honest, spring is our sweet spot — there's no better place to enjoy the outdoors than <strong>Rice Village</strong>. From sidewalk cafés to lush garden patios, here are the best spots to soak up the sun this spring (see our <a href="/blog/brunch-rice-village.html">brunch in the Village</a>).</p>
 <h2>1. Little Woodrow's</h2>
 <p>This beloved Texas bar chain has one of the largest patios in Rice Village. With picnic tables, yard games, and a massive live oak providing shade, it's the quintessential Houston patio experience. Grab a bucket of Lone Stars and settle in for the afternoon.</p>
 <h2>2. Tiny's No. 5</h2>
@@ -67,7 +67,7 @@ const blogPosts = [
 <h2>What to See & Do</h2>
 <ul>
 <li><strong>Gallery exhibitions:</strong> Local and emerging Houston artists display paintings, photography, sculpture, and mixed media throughout the Village.</li>
-<li><strong>Live music:</strong> Acoustic performers set up at various corners and courtyards, creating a festival-like atmosphere.</li>
+<li><strong>Live music:</strong> Acoustic performers set up at various corners and courtyards, creating a festival-like atmosphere (see our <a href="/blog/live-music-nightlife-rice-village.html">live music venues</a>).</li>
 <li><strong>Pop-up vendors:</strong> Local artisans sell handmade jewelry, ceramics, prints, and more from sidewalk booths.</li>
 <li><strong>Special menus:</strong> Many restaurants create themed small plates and cocktails specifically for Art Walk nights.</li>
 <li><strong>Interactive art:</strong> Some months feature live painting, collaborative murals, or art workshops open to all ages.</li>
@@ -75,9 +75,9 @@ const blogPosts = [
 <h2>Planning Your Visit</h2>
 <p><strong>Hours:</strong> Most Art Walk activities run from 6:00 PM to 9:00 PM.</p>
 <p><strong>Parking:</strong> Arrive early for street parking, or use the garages along Kirby Drive and University Blvd. The event is very walkable once you're in the Village.</p>
-<p><strong>Who it's for:</strong> Everyone! The Art Walk is family-friendly, with activities for kids alongside more sophisticated gallery openings. Bring a date, bring the family, or come solo and meet fellow art lovers.</p>
+<p><strong>Who it's for:</strong> Everyone! The Art Walk is family-friendly, with activities for kids (see our <a href="/blog/family-friendly-rice-village.html">family-friendly guide</a>) alongside more sophisticated gallery openings. Bring a date, bring the family, or come solo and meet fellow art lovers.</p>
 <h2>Nearby Cultural Anchors</h2>
-<p>The First Thursday Art Walk complements Rice Village's proximity to major cultural institutions. The <strong><a href="/#directory">Menil Collection</a></strong> and <strong><a href="/#directory">Rothko Chapel</a></strong> are both just a short walk away, making it possible to create an entire evening of art and culture. Start at the Menil for world-class exhibitions, walk through the Art Walk, and end with dinner at one of Rice Village's many restaurants.</p>
+<p>The First Thursday Art Walk complements Rice Village's proximity to major cultural institutions. The <strong><a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></strong> and <strong><a href="https://www.rothkochapel.org" target="_blank" rel="noopener">Rothko Chapel</a></strong> are both just a short walk away, making it possible to create an entire evening of art and culture. Start at the Menil for world-class exhibitions, walk through the Art Walk, and end with dinner at one of Rice Village's many restaurants (see our <a href="/blog/date-night-rice-village.html">romantic dinner spots</a>).</p>
 <p>Mark your calendar for the first Thursday of next month and experience Rice Village in a whole new light!</p>
 <p><strong>Related:</strong> Extend your cultural evening with a visit to the <a href="/blog/menil-collection-rothko-chapel-day.html">Menil Collection &amp; Rothko Chapel</a>, or explore <a href="/blog/rice-village-history.html">Rice Village's rich history</a> dating back to 1937.</p>`,
     category: "events",
@@ -91,17 +91,17 @@ const blogPosts = [
     slug: "houston-restaurant-weeks-rice-village",
     title: "Houston Restaurant Weeks: Rice Village Restaurants You Need to Try",
     excerpt: "Houston Restaurant Weeks offers prix-fixe menus at top spots. Here are the Rice Village restaurants to put on your list.",
-    content: `<p><strong>Houston Restaurant Weeks</strong> is one of the city's most anticipated culinary events, running each August and September. Top restaurants across Houston offer special prix-fixe menus at reduced prices, with proceeds benefiting the Houston Food Bank. Rice Village is home to some of the best participating restaurants — here's where to book.</p>
+    content: `<p><strong><a href="https://www.houstonrestaurantweeks.com" target="_blank" rel="noopener">Houston Restaurant Weeks</a></strong> is one of the city's most anticipated culinary events, running each August and September. Top restaurants across Houston offer special prix-fixe menus at reduced prices, with proceeds benefiting the <a href="https://www.houstonfoodbank.org" target="_blank" rel="noopener">Houston Food Bank</a>. Rice Village is home to some of the best participating restaurants — here's where to book.</p>
 <h2>What Is Houston Restaurant Weeks?</h2>
 <p>Founded by Houston food legend Cleverley Stone, Houston Restaurant Weeks pairs incredible dining experiences with charitable giving. Participating restaurants offer multi-course lunches and dinners at set prices, typically $25 for lunch and $45-$55 for dinner. A portion of every meal goes directly to fighting hunger in Houston.</p>
 <h2>Top Rice Village Picks</h2>
-<h3><a href="/#directory">Prego</a></h3>
+<h3><a href="https://www.pregohouston.com" target="_blank" rel="noopener">Prego</a></h3>
 <p>This beloved Italian restaurant is a Houston Restaurant Weeks veteran. Expect handmade pastas, fresh seafood, and classic Italian desserts in a warm, candlelit setting. Their Restaurant Weeks menu is always one of the best values in the Village.</p>
 <h3><a href="/#directory">Trenbolone Kitchen</a></h3>
 <p>For contemporary American cuisine with a focus on locally sourced ingredients, Trenbolone Kitchen delivers. Their prix-fixe menu typically features creative appetizers, perfectly cooked proteins, and show-stopping desserts.</p>
-<h3><a href="/#directory">Navy Blue</a></h3>
+<h3><a href="https://www.navybluehtx.com" target="_blank" rel="noopener">Navy Blue</a></h3>
 <p>Seafood lovers should beeline to Navy Blue. Their Restaurant Weeks offering often includes fresh Gulf oysters, pan-seared fish, and a decadent dessert course. The modern coastal atmosphere makes every meal feel special.</p>
-<h3><a href="/#directory">Hamsa</a></h3>
+<h3><a href="https://www.hamsahouston.com" target="_blank" rel="noopener">Hamsa</a></h3>
 <p>For something different, Hamsa brings Mediterranean and Middle Eastern flavors to the table. Think hummus flights, lamb kofta, and baklava — all at Houston Restaurant Weeks prices.</p>
 <h2>Tips for Houston Restaurant Weeks</h2>
 <ul>
@@ -123,10 +123,10 @@ const blogPosts = [
     slug: "game-day-rice-village",
     title: "Game Day in Rice Village — Where to Watch Houston Texans & Rice Owls",
     excerpt: "From NFL Sundays to college football Saturdays, Rice Village has the best sports bars and watch party spots in Houston.",
-    content: `<p>Houston is a football city, and Rice Village sits at the intersection of two passionate fan bases: the <strong>Houston Texans</strong> and the <strong>Rice Owls</strong>. With Rice Stadium literally steps away and NRG Stadium a short drive south, the Village buzzes with game-day energy every fall weekend.</p>
+    content: `<p>Houston is a football city, and Rice Village sits at the intersection of two passionate fan bases: the <strong>Houston Texans</strong> and the <strong>Rice Owls</strong>. With Rice Stadium literally steps away and <a href="https://www.nrgpark.com" target="_blank" rel="noopener">NRG Stadium</a> a short drive south, the Village buzzes with game-day energy every fall weekend.</p>
 <h2>Best Sports Bars for Game Day</h2>
-<h3><a href="/#directory">Little Woodrow's</a></h3>
-<p>The undisputed game-day king of Rice Village. Multiple big screens, a massive patio, ice-cold beer, and a crowd that knows how to cheer. Get there early for Texans games — this place packs out.</p>
+<h3><a href="https://www.littlewoodrows.com" target="_blank" rel="noopener">Little Woodrow's</a></h3>
+<p>The undisputed game-day king of Rice Village. Multiple big screens, a massive patio (see our <a href="/blog/best-patios-rice-village.html">best patios in the Village</a>), ice-cold beer, and a crowd that knows how to cheer. Get there early for Texans games — this place packs out.</p>
 <h3><a href="/#directory">Brian O'Neill's Irish Pub</a></h3>
 <p>A classic sports pub with a loyal following. Their TVs are always tuned to the game, the Guinness is perfectly poured, and the fish and chips make excellent game-day fuel.</p>
 <h3><a href="/#directory">D&T Drive Inn</a></h3>
@@ -134,7 +134,7 @@ const blogPosts = [
 <h3><a href="/#directory">Buffalo Wild Wings</a></h3>
 <p>Sometimes you want wings, beer, and every game on at once. The Rice Village B-Dubs delivers exactly that with wall-to-wall screens and their signature sauces.</p>
 <h2>Rice Owls: Walk to the Game</h2>
-<p>One of Rice Village's unique advantages is its proximity to <strong>Rice Stadium</strong>. On home game Saturdays, park in the Village, grab brunch or a pre-game beer, then walk to the stadium. After the game, you're already in the perfect spot for celebratory (or consolation) drinks.</p>
+<p>One of Rice Village's unique advantages is its proximity to <strong>Rice Stadium</strong>. On home game Saturdays, park in the Village, grab brunch or a pre-game beer (see our <a href="/blog/brunch-rice-village.html">brunch guide</a>), then walk to the stadium. After the game, you're already in the perfect spot for celebratory (or consolation) drinks.</p>
 <h2>Texans Game-Day Routine</h2>
 <ol>
 <li><strong>11 AM:</strong> Arrive at Rice Village, park, and grab brunch at Tiny's No. 5</li>
@@ -168,8 +168,8 @@ const blogPosts = [
 <h3><a href="/#directory">Free People</a></h3>
 <p>For the bohemian soul on your list, Free People offers curated clothing, accessories, and home goods that feel special and on-trend. Their holiday collections feature cozy sweaters, statement jewelry, and gift sets perfect for stocking stuffers.</p>
 <h3><a href="/#directory">Anthropologie</a></h3>
-<p>From whimsical home decor to artisan candles and unique cookbooks, Anthropologie is a wonderland of giftable finds. Their Rice Village store is beautifully merchandised for the holidays, making browsing half the fun.</p>
-<h3><a href="/#directory">Warby Parker</a></h3>
+<p>From whimsical home decor to artisan candles and unique cookbooks, Anthropologie is a wonderland of giftable finds. Their Rice Village store is beautifully merchandised for the holidays, making browsing half the fun (see our <a href="/blog/best-coffee-shops-rice-village.html">grab a coffee between shops</a>).</p>
+<h3><a href="https://www.warbyparker.com" target="_blank" rel="noopener">Warby Parker</a></h3>
 <p>Stylish eyewear makes a surprisingly great gift. Warby Parker offers gift cards, sunglasses, and their signature try-at-home program. The Rice Village showroom staff will help you find the perfect frames.</p>
 <h3><a href="/#directory">Half Price Books</a></h3>
 <p>For the reader, the music lover, or the collector, Half Price Books is a treasure trove. From rare first editions to vinyl records, you'll find unique gifts at prices that leave room for stocking stuffers.</p>
@@ -179,7 +179,7 @@ const blogPosts = [
 <ul>
 <li><strong>Shop early:</strong> Rice Village boutiques stock limited quantities of unique items. Don't wait until Christmas Eve.</li>
 <li><strong>Gift wrapping:</strong> Many Village shops offer complimentary gift wrapping during the holidays.</li>
-<li><strong>Small Business Saturday:</strong> The Saturday after Thanksgiving is a big day in Rice Village with special promotions and events.</li>
+<li><strong>Small Business Saturday (see our <a href="/blog/rice-village-farmers-market-weekend-events.html">weekend events</a>):</strong> The Saturday after Thanksgiving is a big day in Rice Village with special promotions and events.</li>
 <li><strong>Parking:</strong> Holiday weekends get busy. Consider weekday evening shopping for a more relaxed experience.</li>
 <li><strong>Gift cards:</strong> When in doubt, most Rice Village shops sell gift cards. Let your loved one choose their own treasure.</li>
 </ul>
@@ -207,12 +207,12 @@ const blogPosts = [
 <h3>Stop 4: Boba Guys</h3>
 <p>Switch things up with a boba tea stop. Boba Guys uses high-quality tea and house-made boba pearls for drinks that are leagues above your typical bubble tea shop. Their matcha latte with boba is legendary.</p>
 <h3>Stop 5: Café Lili</h3>
-<p>End your crawl with a Middle Eastern twist. Café Lili serves rich Turkish coffee alongside traditional pastries and light bites. It's a beautiful way to wind down your caffeine adventure with something culturally distinct.</p>
+<p>End your crawl with a Middle Eastern twist. Café Lili serves rich Turkish coffee alongside traditional pastries and light bites. It's a beautiful way to wind down (see our <a href="/blog/date-night-rice-village.html">date night idea</a>) your caffeine adventure with something culturally distinct.</p>
 <h2>Caffeine Crawl Tips</h2>
 <ul>
 <li><strong>Go small:</strong> Order small sizes at each stop so you can actually make it through all five without vibrating.</li>
 <li><strong>Morning start:</strong> Begin around 8-9 AM on a Saturday for the best experience. Shops are open but not yet packed.</li>
-<li><strong>Walk it off:</strong> All five stops are within a 10-minute walking radius. Stroll between shops to pace yourself.</li>
+<li><strong>Walk it off (see our <a href="/blog/rice-village-history.html">historic streets of Rice Village</a>):</strong> All five stops are within a 10-minute walking radius. Stroll between shops to pace yourself.</li>
 <li><strong>Bring a friend:</strong> Share drinks and compare notes. A caffeine crawl is better with company.</li>
 </ul>
 <p>Rice Village's coffee scene punches well above its weight for a single neighborhood. Whether you make it through all five stops or find your new favorite at the first one, this crawl is a must for any Houston coffee lover.</p>
@@ -228,8 +228,8 @@ const blogPosts = [
     slug: "menil-collection-rothko-chapel-day",
     title: "The Menil Collection & Rothko Chapel — A Cultural Day in Rice Village",
     excerpt: "Plan the perfect cultural day trip exploring world-class art at the Menil Collection and Rothko Chapel, just steps from Rice Village.",
-    content: `<p>Few neighborhoods in Houston — or anywhere in Texas — can match <strong>Rice Village's</strong> cultural offerings. Within walking distance of the shops and restaurants, you'll find two of the most important art destinations in the country: the <strong><a href="/#directory">Menil Collection</a></strong> and the <strong><a href="/#directory">Rothko Chapel</a></strong>.</p>
-<h2>The Menil Collection</h2>
+    content: `<p>Few neighborhoods in Houston — or anywhere in Texas — can match <strong>Rice Village's</strong> cultural offerings. Within walking distance of the shops and restaurants, you'll find two of the most important art destinations in the country: the <strong><a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></strong> and the <strong><a href="https://www.rothkochapel.org" target="_blank" rel="noopener">Rothko Chapel</a></strong>.</p>
+<h2>The <a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></h2>
 <p>Founded by philanthropists John and Dominique de Menil, the Menil Collection houses nearly 17,000 works spanning antiquity to the present. The Renzo Piano-designed building is a masterpiece in itself, with a signature canopy that filters natural light into the galleries.</p>
 <h3>What to See</h3>
 <ul>
@@ -239,7 +239,7 @@ const blogPosts = [
 <li><strong>Cy Twombly Gallery:</strong> A dedicated building for the works of Cy Twombly, designed by Renzo Piano.</li>
 </ul>
 <p><strong>Admission:</strong> Free. Always free. This is one of the greatest free museums in the world.</p>
-<h2>Rothko Chapel</h2>
+<h2><a href="https://www.rothkochapel.org" target="_blank" rel="noopener">Rothko Chapel</a></h2>
 <p>A short walk from the Menil, the Rothko Chapel is a non-denominational chapel featuring fourteen monumental paintings by Mark Rothko. It's a space designed for contemplation, meditation, and human rights advocacy.</p>
 <p>The chapel underwent a major restoration and reopened with improved lighting that reveals subtle color variations in Rothko's dark canvases. Spend at least 20 minutes here — the paintings reveal themselves slowly as your eyes adjust.</p>
 <h2>Your Cultural Day Itinerary</h2>
@@ -250,8 +250,8 @@ const blogPosts = [
 <li><strong>11:00 AM:</strong> Menil Collection main building — take your time with the galleries</li>
 <li><strong>12:30 PM:</strong> Cy Twombly Gallery</li>
 <li><strong>1:00 PM:</strong> Lunch at Prego or Hamsa in Rice Village</li>
-<li><strong>2:30 PM:</strong> Browse Rice Village boutiques for art books and unique finds</li>
-<li><strong>4:00 PM:</strong> Afternoon cocktail at The Kirby Club</li>
+<li><strong>2:30 PM:</strong> Browse Rice Village boutiques (see our <a href="/blog/holiday-shopping-guide-rice-village.html">shopping guide</a>) for art books and unique finds</li>
+<li><strong>4:00 PM:</strong> Afternoon cocktail at The Kirby Club (see our <a href="/blog/happy-hour-guide-rice-village.html">happy hour deals</a>)</li>
 </ol>
 <h2>Visitor Tips</h2>
 <ul>
@@ -274,13 +274,13 @@ const blogPosts = [
     excerpt: "Planning a date night? Rice Village has the perfect mix of romantic restaurants, intimate bars, and after-dinner strolls.",
     content: `<p><strong>Rice Village</strong> is one of Houston's most romantic neighborhoods for a date night. With its tree-lined streets, independent restaurants, and intimate cocktail bars, it offers everything you need for an unforgettable evening — no planning stress required.</p>
 <h2>Romantic Dinner Spots</h2>
-<h3><a href="/#directory">Prego</a></h3>
+<h3><a href="https://www.pregohouston.com" target="_blank" rel="noopener">Prego</a></h3>
 <p>Nothing says romance like candlelit Italian dining. Prego's warm atmosphere, handmade pasta, and extensive wine list make it Rice Village's go-to date night restaurant. Request a corner table for maximum intimacy.</p>
-<h3><a href="/#directory">Navy Blue</a></h3>
+<h3><a href="https://www.navybluehtx.com" target="_blank" rel="noopener">Navy Blue</a></h3>
 <p>Seafood and romance go hand in hand at Navy Blue. The modern coastal decor, raw bar, and craft cocktails create a sophisticated yet relaxed ambiance. Share a dozen oysters to start the night right.</p>
-<h3><a href="/#directory">Hamsa</a></h3>
+<h3><a href="https://www.hamsahouston.com" target="_blank" rel="noopener">Hamsa</a></h3>
 <p>For an adventurous date, Hamsa's Mediterranean sharing plates are perfect. Order multiple small dishes, share everything, and discover new flavors together. The warm, colorful interior adds to the experience.</p>
-<h3><a href="/#directory">El Topo</a></h3>
+<h3><a href="https://www.eltopohtx.com" target="_blank" rel="noopener">El Topo</a></h3>
 <p>If your date loves margaritas and modern Mexican cuisine, El Topo delivers. The vibrant patio with string lights is incredibly romantic on warm evenings, and their tableside guacamole is always impressive.</p>
 <h2>After-Dinner Drinks</h2>
 <h3><a href="/#directory">The Kirby Club</a></h3>
@@ -289,9 +289,9 @@ const blogPosts = [
 <p>For a cozier, more intimate vibe, this Scottish pub offers an impressive whisky collection and a warm, welcoming atmosphere. It's the kind of place where conversations deepen over a shared dram.</p>
 <h2>Date Night Itineraries</h2>
 <h3>The Classic</h3>
-<p>Dinner at Prego → Cocktails at The Kirby Club → Walk through the Rice University campus under the oaks</p>
+<p>Dinner at Prego → Cocktails at The Kirby Club → Walk through the <a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a> campus under the oaks</p>
 <h3>The Adventurer</h3>
-<p>Menil Collection at sunset (free!) → Dinner at Hamsa → Drinks at Kelvin Arms</p>
+<p><a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a> at sunset (free!) → Dinner at Hamsa → Drinks at Kelvin Arms</p>
 <h3>The Casual</h3>
 <p>Happy hour at El Topo → Browse Half Price Books together → Ice cream at Creamistry</p>
 <h2>Date Night Tips</h2>
@@ -328,7 +328,7 @@ const blogPosts = [
 <h2>Saturday Morning Routine</h2>
 <ol>
 <li><strong>8:00 AM:</strong> Arrive early for the best selection at the farmers market</li>
-<li><strong>9:30 AM:</strong> Coffee at Siphon Coffee — reward yourself for being an early bird</li>
+<li><strong>9:30 AM:</strong> Coffee at Siphon Coffee (see our <a href="/blog/best-coffee-shops-rice-village.html">caffeine crawl</a>) — reward yourself for being an early bird</li>
 <li><strong>10:00 AM:</strong> Browse the Saturday morning pop-up vendors along University Blvd</li>
 <li><strong>11:00 AM:</strong> Brunch at Tiny's No. 5 (arrive before the rush!)</li>
 </ol>
@@ -337,7 +337,7 @@ const blogPosts = [
 <h3>Sunday Best</h3>
 <ul>
 <li>Brunch at your favorite Village spot</li>
-<li>Afternoon stroll through the Menil campus</li>
+<li>Afternoon stroll through the Menil campus (see our <a href="/blog/menil-collection-rothko-chapel-day.html">Menil cultural day</a>)</li>
 <li>Window shopping along Rice Blvd</li>
 <li>Sunset happy hour on a patio</li>
 </ul>
@@ -365,10 +365,10 @@ const blogPosts = [
 <h2>Best Air-Conditioned Escapes</h2>
 <h3><a href="/#directory">Half Price Books</a></h3>
 <p>Lose yourself (and a few hours) in Houston's favorite bookstore. The AC is always cranked, the selection is vast, and you can browse everything from bestsellers to rare finds without breaking a sweat. It's the perfect summer afternoon activity.</p>
-<h3>The Menil Collection</h3>
-<p>Free admission AND free air conditioning? The Menil is a summer lifesaver. Spend the hottest part of the day surrounded by world-class art in a beautifully climate-controlled space.</p>
+<h3>The <a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></h3>
+<p>Free admission AND free air conditioning? The Menil is a summer lifesaver (see our <a href="/blog/menil-collection-rothko-chapel-day.html">cultural day guide</a>). Spend the hottest part of the day surrounded by world-class art in a beautifully climate-controlled space.</p>
 <h3>Rice Village Boutiques</h3>
-<p>Summer is the perfect time for a leisurely shopping trip through Kendra Scott, Anthropologie, Free People, and other Village boutiques. Each shop is a cool oasis, and you might just find some great summer sale deals.</p>
+<p>Summer is the perfect time for a leisurely shopping trip through Kendra Scott, Anthropologie, Free People (see our <a href="/blog/holiday-shopping-guide-rice-village.html">boutique guide</a>), and other Village boutiques. Each shop is a cool oasis, and you might just find some great summer sale deals.</p>
 <h2>Frozen Treats & Cold Drinks</h2>
 <h3><a href="/#directory">Creamistry</a></h3>
 <p>Watch your ice cream made to order with liquid nitrogen. It's science, it's delicious, and it's exactly what you need when it's 102°F outside. The customization options are endless.</p>
@@ -385,7 +385,7 @@ const blogPosts = [
 <li><strong>Indoor hop:</strong> Plan your route from air-conditioned shop to air-conditioned shop. Minimize outdoor time.</li>
 </ul>
 <h2>Summer Events</h2>
-<p>Despite the heat, Rice Village keeps the events going. Look for indoor pop-up markets, evening patio parties (after the sun goes down), and extended happy hours designed to make summer social life bearable.</p>
+<p>Despite the heat, Rice Village keeps the events going. Look for indoor pop-up markets, evening patio parties (after the sun goes down), and extended happy hours (see our <a href="/blog/happy-hour-guide-rice-village.html">happy hour guide</a>) designed to make summer social life bearable.</p>
 <p>Houston summers are a test of character, but Rice Village makes the test a lot more enjoyable. Stay cool out there!</p>
 <p><strong>Related:</strong> Cool off with a <a href="/blog/best-coffee-shops-rice-village.html">caffeine crawl</a> through Rice Village's best coffee shops, or find the <a href="/blog/best-patios-rice-village.html">best patios</a> for shaded outdoor dining.</p>`,
     category: "guides",
@@ -401,9 +401,9 @@ const blogPosts = [
     excerpt: "Houston's food festival calendar is packed. Here's what's happening near Rice Village throughout 2026.",
     content: `<p><strong>Houston</strong> is a food city, and the festival calendar proves it. From massive citywide events to intimate neighborhood tastings, there's always something delicious happening near <strong>Rice Village</strong> in 2026.</p>
 <h2>Major Houston Food Festivals</h2>
-<h3>Houston Livestock Show & Rodeo BBQ Cook-Off (February-March)</h3>
-<p>The World's Championship Bar-B-Que Contest kicks off rodeo season with hundreds of teams competing for barbecue glory. While the cook-off happens at NRG Park, Rice Village restaurants celebrate with their own BBQ specials and smoked-meat menus.</p>
-<h3>Houston Restaurant Weeks (August-September)</h3>
+<h3><a href="https://www.rodeohouston.com" target="_blank" rel="noopener">Houston Livestock Show & Rodeo</a> BBQ Cook-Off (February-March)</h3>
+<p>The World's Championship Bar-B-Que Contest kicks off rodeo season with hundreds of teams competing for barbecue glory. While the cook-off happens at NRG Park, Rice Village restaurants celebrate with their own BBQ specials (see our <a href="/blog/houston-rodeo-guide-rice-village.html">rodeo dining guide</a>) and smoked-meat menus.</p>
+<h3><a href="https://www.houstonrestaurantweeks.com" target="_blank" rel="noopener">Houston Restaurant Weeks</a> (August-September)</h3>
 <p>The city's premier dining event, with prix-fixe menus at top restaurants. Multiple Rice Village restaurants participate — see our <a href="/blog/houston-restaurant-weeks-rice-village.html">full guide</a> for details.</p>
 <h3>Houston Wine & Food Week (April)</h3>
 <p>A week-long celebration of Houston's culinary scene featuring wine dinners, chef collaborations, and grand tastings. Many events take place in or near the Rice Village area.</p>
@@ -411,11 +411,11 @@ const blogPosts = [
 <p>Held at the Annunciation Greek Orthodox Cathedral, not far from Rice Village, this beloved festival celebrates Greek food, music, and culture. The baklava alone is worth the trip.</p>
 <h2>Neighborhood Events Near Rice Village</h2>
 <h3>Rice Village First Thursday Art Walk (Monthly)</h3>
-<p>Many participating restaurants offer special food-and-art pairings during the monthly art walk. It's a great way to sample new dishes in a festive atmosphere.</p>
+<p>Many participating restaurants offer special food-and-art pairings (see our <a href="/blog/first-thursday-art-walk.html">Art Walk guide</a>) during the monthly art walk. It's a great way to sample new dishes in a festive atmosphere.</p>
 <h3>Upper Kirby Wine Walk (Spring & Fall)</h3>
 <p>Just north of Rice Village, the Upper Kirby District hosts wine walks where local restaurants and shops pour tastings along the route. An easy walk or short rideshare from the Village.</p>
 <h3>Rice Village Summer Sip & Shop (June)</h3>
-<p>An annual summer event where Rice Village shops and restaurants collaborate to offer tastings, samples, and special discounts. It's a great way to discover new favorites in the neighborhood.</p>
+<p>An annual summer event where Rice Village shops and restaurants collaborate to offer tastings, samples, and special discounts. It's a great way to discover new favorites (see our <a href="/blog/new-openings-rice-village.html">latest openings</a>) in the neighborhood.</p>
 <h2>2026 Calendar at a Glance</h2>
 <ul>
 <li><strong>February:</strong> Rodeo BBQ Cook-Off + Rice Village rodeo specials</li>
@@ -440,9 +440,9 @@ const blogPosts = [
     excerpt: "Find the best happy hour deals in Rice Village — from half-price cocktails to $5 beer buckets and discounted appetizers.",
     content: `<p>After a long day, nothing hits like a great happy hour deal. <strong>Rice Village</strong> bars and restaurants compete to offer the best after-work specials, and the winners are the customers. Here's your definitive guide to happy hour in the Village.</p>
 <h2>Best Happy Hour Deals</h2>
-<h3><a href="/#directory">Little Woodrow's</a></h3>
+<h3><a href="https://www.littlewoodrows.com" target="_blank" rel="noopener">Little Woodrow's</a></h3>
 <p><strong>When:</strong> Monday-Friday, 3-7 PM</p>
-<p><strong>The deal:</strong> Discounted buckets of domestic beer, $2 off craft drafts, and half-price select appetizers. Their patio is the ultimate happy hour destination when the weather cooperates.</p>
+<p><strong>The deal:</strong> Discounted buckets of domestic beer, $2 off craft drafts, and half-price select appetizers. Their patio is the ultimate happy hour destination (see our <a href="/blog/best-patios-rice-village.html">best patios</a>) when the weather cooperates.</p>
 <h3><a href="/#directory">The Kirby Club</a></h3>
 <p><strong>When:</strong> Tuesday-Friday, 4-7 PM</p>
 <p><strong>The deal:</strong> $8 signature cocktails (normally $14-16), $6 wines by the glass, and a special happy hour bites menu. This is upscale happy hour at its finest.</p>
@@ -452,7 +452,7 @@ const blogPosts = [
 <h3><a href="/#directory">D&T Drive Inn</a></h3>
 <p><strong>When:</strong> Daily, 2-7 PM</p>
 <p><strong>The deal:</strong> Some of the cheapest drinks in Rice Village, period. Their daily specials rotate, but you can always count on affordable pitchers and a fun, dive-bar atmosphere.</p>
-<h3><a href="/#directory">El Topo</a></h3>
+<h3><a href="https://www.eltopohtx.com" target="_blank" rel="noopener">El Topo</a></h3>
 <p><strong>When:</strong> Monday-Friday, 3-6 PM</p>
 <p><strong>The deal:</strong> $6 margaritas, $5 Mexican beers, and half-price queso and guacamole. Their patio is the spot for after-work margaritas.</p>
 <h2>Happy Hour Strategy</h2>
@@ -480,21 +480,21 @@ const blogPosts = [
     slug: "rice-village-history",
     title: "Rice Village History: From 1937 to Houston's Coolest District",
     excerpt: "Rice Village has been a Houston institution since 1937. Discover the fascinating history of this beloved neighborhood.",
-    content: `<p><strong>Rice Village</strong> isn't just a shopping district — it's a piece of Houston history. Established in 1937, the Village has evolved from a small cluster of shops serving Rice University students into one of the city's most vibrant and beloved neighborhoods.</p>
+    content: `<p><strong>Rice Village</strong> isn't just a shopping district — it's a piece of Houston history. Established in 1937, the Village has evolved from a small cluster of shops serving <a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a> students into one of the city's most vibrant and beloved neighborhoods.</p>
 <h2>The Early Years: 1937-1960s</h2>
 <p>Rice Village was born during the Great Depression, conceived as a small shopping center to serve the growing community around Rice University (then Rice Institute). The original development centered around the intersection of University Boulevard and Kirby Drive, with a handful of shops and services catering to students, faculty, and residents of the West University area.</p>
 <p>In its earliest days, the Village was a collection of modest storefronts — a pharmacy, a barbershop, a hardware store, and a few restaurants. The neighborhood had a distinctly small-town feel, where shopkeepers knew their customers by name and students could walk from campus to grab lunch and supplies.</p>
 <h2>Growth and Change: 1960s-1990s</h2>
 <p>As Houston boomed in the post-war era, so did Rice Village. The neighborhood attracted more diverse businesses — bookstores, clothing boutiques, record shops, and ethnic restaurants that reflected Houston's growing international population. The Village became known as a bohemian enclave, attracting artists, musicians, and intellectuals drawn to its independent spirit.</p>
-<p>Key moments from this era include the opening of several independent bookstores that became community gathering places, the arrival of the first international restaurants that gave the Village its cosmopolitan reputation, and the preservation efforts that kept the neighborhood's character intact as Houston sprawled outward.</p>
+<p>Key moments from this era include the opening of several independent bookstores that became community gathering places, the arrival of the first international restaurants that gave the Village its cosmopolitan reputation (see our <a href="/blog/houston-food-festivals-2026.html">food festival scene</a>), and the preservation efforts that kept the neighborhood's character intact as Houston sprawled outward.</p>
 <h2>The Modern Village: 2000s-Present</h2>
-<p>The 21st century brought both challenges and opportunities. National retailers arrived, joining the mix of independent shops. New restaurants elevated the dining scene from casual to destination-worthy. The addition of the Menil Collection (1987) and the continued presence of Rice University kept the cultural and intellectual DNA intact.</p>
+<p>The 21st century brought both challenges and opportunities. National retailers arrived, joining the mix of independent shops. New restaurants elevated the dining scene from casual to destination-worthy. The addition of the <a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a> (1987) and the continued presence of Rice University kept the cultural and intellectual DNA intact.</p>
 <p>Today, Rice Village is home to over 350 businesses spanning restaurants, bars, coffee shops, boutiques, museums, and cultural venues. It remains one of Houston's most walkable neighborhoods, with a mix of national brands and independent shops that makes it unique among Houston's commercial districts.</p>
 <h2>What Makes Rice Village Special</h2>
 <ul>
 <li><strong>Walkability:</strong> In a city defined by cars, Rice Village is refreshingly pedestrian-friendly.</li>
 <li><strong>Diversity:</strong> The business mix reflects Houston's multicultural identity.</li>
-<li><strong>Culture:</strong> The Menil Collection and Rice University anchor the neighborhood's intellectual life.</li>
+<li><strong>Culture:</strong> <a href="https://www.menil.org" target="_blank" rel="noopener">The Menil Collection</a> and Rice University anchor the neighborhood's intellectual life.</li>
 <li><strong>Community:</strong> Events like the First Thursday Art Walk keep the neighborhood connected.</li>
 <li><strong>History:</strong> Nearly 90 years of continuous operation make it Houston's oldest shopping district.</li>
 </ul>
@@ -514,23 +514,23 @@ const blogPosts = [
     excerpt: "Bringing the kids? Rice Village has plenty of family-friendly restaurants, activities, and shops that everyone will enjoy.",
     content: `<p>Rice Village isn't just for foodies and shoppers — it's a fantastic destination for families, too. From kid-friendly restaurants with great food (for adults, too) to fun activities that keep little ones entertained, here's your family guide to the Village.</p>
 <h2>Kid-Approved Restaurants</h2>
-<h3><a href="/#directory">Shake Shack</a></h3>
+<h3><a href="https://www.shakeshack.com" target="_blank" rel="noopener">Shake Shack</a></h3>
 <p>The gold standard of family-friendly dining. Excellent burgers, crispy fries, and milkshakes that kids (and let's be honest, adults) go crazy for. The casual counter-service format means no stress about keeping kids quiet at a fancy table.</p>
-<h3><a href="/#directory">Torchy's Tacos</a></h3>
+<h3><a href="https://www.torchystacos.com" target="_blank" rel="noopener">Torchy's Tacos</a></h3>
 <p>Tacos are universally kid-friendly, and Torchy's makes some of the best in Houston. The queso is legendary, and the build-your-own option lets picky eaters customize. Crayons and coloring sheets keep little hands busy.</p>
-<h3><a href="/#directory">Jason's Deli</a></h3>
+<h3><a href="https://www.jasonsdeli.com" target="_blank" rel="noopener">Jason's Deli</a></h3>
 <p>A Houston institution with a dedicated kids' menu, a free ice cream machine (yes, really), and salad bar that makes parents happy. The relaxed atmosphere is perfect for families.</p>
 <h3>Chipotle</h3>
 <p>Fast, customizable, and kid-tested. Quesadillas, rice bowls, and chips are easy wins for young diners, and the build-your-own format makes even picky eaters happy.</p>
 <h3><a href="/#directory">Insomnia Cookies</a></h3>
 <p>For dessert, nothing beats warm cookies fresh from the oven. Insomnia Cookies is a treat destination that kids will beg to visit again. Pro tip: the cookie ice cream sandwich is worth the mess.</p>
 <h2>Family Activities</h2>
-<h3>The Menil Collection</h3>
+<h3>The <a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></h3>
 <p>Free admission makes the Menil a budget-friendly family outing. Many kids are fascinated by the modern art, and the grassy campus is perfect for running around between gallery visits. The Menil offers family guides and occasional children's programs.</p>
 <h3><a href="/#directory">Half Price Books</a></h3>
 <p>Take the kids to the children's section and let them pick out a book. At half price (or less), you can afford to say yes to more than one. It's a great way to encourage reading while enjoying a cool, air-conditioned space.</p>
-<h3>Rice University Campus</h3>
-<p>The beautiful Rice University campus is just steps from the Village. Kids love running through the oak-shaded quads, and the architecture is stunning. It's a great place for a family walk after lunch.</p>
+<h3><a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a> Campus</h3>
+<p>The beautiful Rice University campus (see our <a href="/blog/rice-university-events.html">Rice University events</a>) is just steps from the Village. Kids love running through the oak-shaded quads, and the architecture is stunning. It's a great place for a family walk after lunch.</p>
 <h3>Window Shopping & Treasure Hunting</h3>
 <p>Older kids enjoy browsing Rice Village's unique shops. Village Thrift is a treasure hunt for vintage finds, and the toy and novelty sections at various shops keep kids engaged.</p>
 <h2>Family-Friendly Tips</h2>
@@ -564,7 +564,7 @@ const blogPosts = [
 <p>The retail landscape in Rice Village is shifting toward experiential and specialty shopping. New arrivals tend to focus on:</p>
 <ul>
 <li><strong>Local and independent brands:</strong> Houston-based makers and designers finding a home in the Village</li>
-<li><strong>Wellness and beauty:</strong> Boutique fitness studios, skincare shops, and wellness concepts</li>
+<li><strong>Wellness and beauty:</strong> Boutique fitness studios (see our <a href="/blog/summer-houston-rice-village.html">summer activities</a>), skincare shops, and wellness concepts</li>
 <li><strong>Specialty food:</strong> Artisan chocolate, craft spirits, gourmet provisions, and specialty grocery</li>
 <li><strong>Tech and lifestyle:</strong> Modern eyewear, phone accessories, and lifestyle brands</li>
 </ul>
@@ -572,7 +572,7 @@ const blogPosts = [
 <p>What makes Rice Village attractive to new businesses?</p>
 <ul>
 <li><strong>Foot traffic:</strong> The walkable neighborhood generates consistent, high-quality foot traffic</li>
-<li><strong>Demographics:</strong> Proximity to Rice University and West University brings educated, affluent consumers</li>
+<li><strong>Demographics:</strong> Proximity to <a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a> and West University brings educated, affluent consumers</li>
 <li><strong>Community:</strong> Rice Village has a loyal customer base that supports new businesses</li>
 <li><strong>Brand neighbors:</strong> Being alongside established names like Kendra Scott and Anthropologie elevates new brands</li>
 <li><strong>History:</strong> The neighborhood's 89-year heritage adds cachet and credibility</li>
@@ -594,9 +594,9 @@ const blogPosts = [
     excerpt: "Combine world-class museums with Rice Village dining and shopping for the perfect Houston day trip itinerary.",
     content: `<p>Houston's <strong>Museum District</strong> is one of the country's largest, with 19 museums within a 1.5-mile radius — and it sits right next to <strong>Rice Village</strong>. Combining the two makes for an incredible day trip that covers art, science, history, food, and shopping.</p>
 <h2>Morning: Museum District</h2>
-<h3>9:00 AM — Museum of Fine Arts, Houston</h3>
-<p>Start your day at the MFAH, one of the largest art museums in the country. The recently expanded campus includes the stunning Nancy and Rich Kinder Building, designed by Steven Holl. Don't miss the Latin American art collection and the sculpture garden.</p>
-<h3>11:00 AM — Houston Museum of Natural Science</h3>
+<h3>9:00 AM — <a href="https://www.mfah.org" target="_blank" rel="noopener">Museum of Fine Arts, Houston</a></h3>
+<p>Start your day at the <a href="https://www.mfah.org" target="_blank" rel="noopener">MFAH</a>, one of the largest art museums in the country. The recently expanded campus includes the stunning Nancy and Rich Kinder Building, designed by Steven Holl. Don't miss the Latin American art collection and the sculpture garden.</p>
+<h3>11:00 AM — <a href="https://www.hmns.org" target="_blank" rel="noopener">Houston Museum of Natural Science</a></h3>
 <p>Just a few blocks away, the HMNS offers dinosaur skeletons, gem and mineral halls, a planetarium, and a butterfly center. It's a hit with all ages and a Houston institution since 1909.</p>
 <h2>Lunch: Rice Village</h2>
 <h3>12:30 PM — Walk or Drive to Rice Village (10 minutes)</h3>
@@ -604,17 +604,17 @@ const blogPosts = [
 <p><strong>Quick options:</strong> Mendocino Farms for healthy, creative sandwiches; SweetGreen for grain bowls; Shake Shack for classic burgers.</p>
 <p><strong>Sit-down options:</strong> Prego for Italian; Hamsa for Mediterranean; Navy Blue for seafood.</p>
 <h2>Afternoon: Rice Village & Menil</h2>
-<h3>2:00 PM — The Menil Collection</h3>
+<h3>2:00 PM — The <a href="https://www.menil.org" target="_blank" rel="noopener">Menil Collection</a></h3>
 <p>After lunch, walk to the Menil Collection (free admission). This world-class museum is less crowded in the afternoon and its intimate scale offers a different experience from the morning's larger museums.</p>
-<h3>3:00 PM — Rothko Chapel</h3>
+<h3>3:00 PM — <a href="https://www.rothkochapel.org" target="_blank" rel="noopener">Rothko Chapel</a></h3>
 <p>A short walk from the Menil, the Rothko Chapel provides a contemplative pause in your busy day. Spend 15-20 minutes with Rothko's meditative canvases.</p>
 <h3>3:30 PM — Rice Village Shopping</h3>
-<p>Browse the Village's boutiques and shops. Highlights include Kendra Scott for jewelry, Anthropologie for home goods, Half Price Books for great deals, and Free People for fashion.</p>
+<p>Browse the Village's boutiques and shops. Highlights include Kendra Scott for jewelry, Anthropologie (see our <a href="/blog/holiday-shopping-guide-rice-village.html">boutique shopping guide</a>) for home goods, Half Price Books for great deals, and Free People for fashion.</p>
 <h2>Evening: Dinner & Drinks</h2>
 <h3>5:30 PM — Happy Hour</h3>
-<p>Catch the tail end of happy hour at The Kirby Club or El Topo. You've had a big day — you deserve a good deal on a great cocktail.</p>
+<p>Catch the tail end of happy hour at The Kirby Club or El Topo (see our <a href="/blog/happy-hour-guide-rice-village.html">happy hour deals guide</a>). You've had a big day — you deserve a good deal on a great cocktail.</p>
 <h3>6:30 PM — Dinner</h3>
-<p>End your day trip with dinner at one of Rice Village's top restaurants. Prego, Trenbolone Kitchen, or El Topo are all excellent choices.</p>
+<p>End your day trip with dinner (see our <a href="/blog/date-night-rice-village.html">romantic dinner spots</a>) at one of Rice Village's top restaurants. Prego, Trenbolone Kitchen, or El Topo are all excellent choices.</p>
 <h2>Day Trip Tips</h2>
 <ul>
 <li><strong>Parking:</strong> Park in Rice Village for the day and use rideshare for the Museum District. Or park at one of the Museum District lots and walk to Rice Village later.</li>
@@ -637,15 +637,15 @@ const blogPosts = [
     excerpt: "From boozy brunches to healthy bowls, Rice Village has the best weekend brunch scene in Houston. Here's where to go.",
     content: `<p>Weekend brunch is a religion in Houston, and <strong>Rice Village</strong> is home to some of the city's best temples of late-morning indulgence. Whether you're craving eggs Benedict, avocado toast, or bottomless mimosas, the Village has you covered.</p>
 <h2>Best Brunch Spots</h2>
-<h3><a href="/#directory">Tiny's No. 5</a></h3>
-<p>The reigning brunch champion of Rice Village. Tiny's weekend brunch menu features elevated classics — think lemon ricotta pancakes, smoked salmon Benedict, and a brunch burger that has its own fan club. The mimosa carafe is a must-order, and the sidewalk patio is prime real estate on sunny mornings.</p>
-<h3><a href="/#directory">SweetGreen</a></h3>
+<h3><a href="https://www.tinysno5.com" target="_blank" rel="noopener">Tiny's No. 5</a></h3>
+<p>The reigning brunch champion of Rice Village. Tiny's weekend brunch menu features elevated classics — think lemon ricotta pancakes, smoked salmon Benedict, and a brunch burger that has its own fan club. The mimosa carafe is a must-order, and the sidewalk patio is prime real estate on sunny mornings (see our <a href="/blog/best-patios-rice-village.html">best patios</a>).</p>
+<h3><a href="https://www.sweetgreen.com" target="_blank" rel="noopener">SweetGreen</a></h3>
 <p>For the health-conscious bruncher, SweetGreen's grain bowls and fresh salads are a guilt-free way to start the weekend. It's quick, it's nutritious, and it leaves you energized rather than comatose. Perfect when you have afternoon plans.</p>
-<h3><a href="/#directory">Mendocino Farms</a></h3>
+<h3><a href="https://www.mendocinofarms.com" target="_blank" rel="noopener">Mendocino Farms</a></h3>
 <p>Creative sandwiches and salads that go beyond basic brunch fare. Their weekend specials often feature seasonal ingredients and inventive combinations. The vibe is casual but the food is anything but.</p>
 <h3><a href="/#directory">Tout Suite</a></h3>
 <p>If pastries are your brunch love language, Tout Suite speaks fluently. Fresh croissants, macarons, artisan coffee, and beautiful plating make this café a must for the Instagram brunch crowd. The airy interior is gorgeous for a leisurely morning.</p>
-<h3><a href="/#directory">Torchy's Tacos</a></h3>
+<h3><a href="https://www.torchystacos.com" target="_blank" rel="noopener">Torchy's Tacos</a></h3>
 <p>Breakfast tacos are Houston brunch at its most authentic. Torchy's morning menu includes scrambled egg tacos, chorizo and potato, and the legendary Trailer Park — a fried chicken strip taco with green chiles and queso. It's messy, it's delicious, it's Houston.</p>
 <h2>The Rice Village Brunch Crawl</h2>
 <p>Can't decide? Do a mini brunch crawl:</p>
@@ -653,14 +653,14 @@ const blogPosts = [
 <li><strong>Start:</strong> Coffee and a pastry at Tout Suite</li>
 <li><strong>Main course:</strong> Brunch plate at Tiny's No. 5</li>
 <li><strong>Dessert:</strong> Cookie from Insomnia Cookies or ice cream from Creamistry</li>
-<li><strong>Nightcap (morning cap?):</strong> Bloody Mary at Little Woodrow's</li>
+<li><strong>Nightcap (morning cap?):</strong> Bloody Mary at Little Woodrow's (see our <a href="/blog/happy-hour-guide-rice-village.html">happy hour deals</a>)</li>
 </ol>
 <h2>Brunch Tips</h2>
 <ul>
 <li><strong>Arrive early:</strong> The 10-11 AM window fills up fast at popular spots. Arrive by 10 for the best experience.</li>
 <li><strong>Reservations:</strong> Tiny's and other sit-down spots accept weekend brunch reservations. Use them.</li>
 <li><strong>Weekday brunch:</strong> Some Rice Village spots serve brunch on weekdays too, with much shorter waits.</li>
-<li><strong>Outdoor seating:</strong> Spring and fall mornings are perfect for patio brunch. Summer mornings work too if you're there before 11.</li>
+<li><strong>Outdoor seating:</strong> Spring and fall mornings are perfect for patio brunch (see our <a href="/blog/summer-houston-rice-village.html">summer dining tips</a>). Summer mornings work too if you're there before 11.</li>
 </ul>
 <p>Rice Village brunch is a weekly ritual for many Houstonians. Join the tradition and discover your new favorite Saturday morning spot.</p>
 <p><strong>Related:</strong> Continue your weekend with our <a href="/blog/rice-village-farmers-market-weekend-events.html">Farmers Market &amp; Weekend Events Guide</a>, or find the <a href="/blog/best-coffee-shops-rice-village.html">best coffee shops</a> for a pre-brunch caffeine fix.</p>`,
@@ -675,7 +675,7 @@ const blogPosts = [
     slug: "rice-university-events",
     title: "Rice University Events That Bring the Village to Life",
     excerpt: "Rice University's campus events spill over into the Village, from football games to cultural festivals. Here's what to know.",
-    content: `<p><strong>Rice University</strong> and <strong>Rice Village</strong> have been inseparable since the shopping district was founded in 1937. The university's events — from academic lectures to football games to cultural festivals — regularly spill into the Village, bringing energy, crowds, and a unique college-town atmosphere to Houston's urban landscape.</p>
+    content: `<p><strong><a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a></strong> and <strong>Rice Village</strong> have been inseparable since the shopping district was founded in 1937. The university's events — from academic lectures to football games to cultural festivals — regularly spill into the Village, bringing energy, crowds, and a unique college-town atmosphere to Houston's urban landscape.</p>
 <h2>Football Season</h2>
 <p>When the <strong>Rice Owls</strong> play at home, the Village becomes an extension of the tailgate. Alumni, students, and fans flood the neighborhood's bars and restaurants for pre-game meals and post-game celebrations. Rice Stadium is literally walking distance from the Village, making it the natural gathering spot for game day.</p>
 <h3>Game Day in the Village</h3>
@@ -686,17 +686,17 @@ const blogPosts = [
 </ul>
 <h2>Academic & Cultural Events</h2>
 <h3>Rice Public Lectures</h3>
-<p>Rice University hosts world-class speakers and lecturers throughout the year, many of which are free and open to the public. After a thought-provoking lecture, many attendees walk to Rice Village for dinner and continued discussion. It's one of the ways the university's intellectual energy feeds the neighborhood's vibrant social scene.</p>
-<h3>Shepherd School of Music Concerts</h3>
+<p>Rice University hosts world-class speakers and lecturers throughout the year, many of which are free and open to the public. After a thought-provoking lecture, many attendees walk to Rice Village for dinner (see our <a href="/blog/date-night-rice-village.html">dinner spots</a>) and continued discussion. It's one of the ways the university's intellectual energy feeds the neighborhood's vibrant social scene.</p>
+<h3><a href="https://music.rice.edu" target="_blank" rel="noopener">Shepherd School of Music</a> Concerts</h3>
 <p>The Shepherd School is one of the top music conservatories in the country, and their student and faculty concerts are free. An evening concert followed by dinner in Rice Village is a cultured, affordable night out.</p>
-<h3>Baker Institute Events</h3>
-<p>Rice's James A. Baker III Institute for Public Policy hosts lectures, panels, and forums on major policy issues. These events attract professionals and intellectuals from across Houston, many of whom gather at Rice Village restaurants and bars afterward.</p>
+<h3><a href="https://www.bakerinstitute.org" target="_blank" rel="noopener">Baker Institute</a> Events</h3>
+<p>Rice's <a href="https://www.bakerinstitute.org" target="_blank" rel="noopener">James A. Baker III Institute for Public Policy</a> hosts lectures, panels, and forums on major policy issues. These events attract professionals and intellectuals from across Houston, many of whom gather at Rice Village restaurants and bars afterward.</p>
 <h2>Student Life & the Village</h2>
 <p>Rice students have a special relationship with the Village. It's where they study at coffee shops, celebrate milestones, grab late-night snacks, and explore Houston beyond the hedges. Key student spots include:</p>
 <ul>
-<li><strong><a href="/#directory">Siphon Coffee</a></strong> — The go-to study spot for caffeine-fueled paper writing</li>
+<li><strong><a href="https://www.siphoncoffee.com" target="_blank" rel="noopener">Siphon Coffee</a></strong> — The go-to study spot for caffeine-fueled paper writing</li>
 <li><strong>Valhalla</strong> — The legendary Rice grad student pub, technically on campus but spiritually part of the Village</li>
-<li><strong><a href="/#directory">Insomnia Cookies</a></strong> — Late-night fuel during finals week</li>
+<li><strong><a href="/#directory">Insomnia Cookies</a></strong> — Late-night fuel during finals week (see our <a href="/blog/best-coffee-shops-rice-village.html">coffee shops for studying</a>)</li>
 <li><strong><a href="/#directory">Half Price Books</a></strong> — Where English majors go to browse and find deals</li>
 </ul>
 <h2>Annual Events Calendar</h2>
@@ -724,7 +724,7 @@ const blogPosts = [
 <h2>Best Bars in Rice Village</h2>
 <h3><a href="/#directory">The Kirby Club</a></h3>
 <p>Rice Village's most sophisticated bar. The Kirby Club offers inventive craft cocktails in a sleek, dimly lit setting that feels exclusive without being pretentious. Their bartenders are true mixologists — tell them what you like and let them create something special. The whiskey selection is among the best in Houston.</p>
-<h3><a href="/#directory">Little Woodrow's</a></h3>
+<h3><a href="https://www.littlewoodrows.com" target="_blank" rel="noopener">Little Woodrow's</a></h3>
 <p>The quintessential Texas bar experience. Little Woodrow's is always lively, with a huge patio, ice-cold beer, and a crowd that spans college students to young professionals. It's the kind of place where every night feels like a Friday night.</p>
 <h3><a href="/#directory">Brian O'Neill's Irish Pub</a></h3>
 <p>Authentic, warm, and always welcoming. Brian O'Neill's brings genuine Irish pub culture to Houston with perfectly poured Guinness, a solid whiskey collection, and live music on weekends. The trivia nights are legendary.</p>
@@ -739,7 +739,7 @@ const blogPosts = [
 <ul>
 <li><strong>Brian O'Neill's:</strong> Live Celtic, folk, and rock music on weekends</li>
 <li><strong>Little Woodrow's:</strong> Occasional acoustic acts on the patio</li>
-<li><strong>Various pop-ups:</strong> The First Thursday Art Walk often features live musicians throughout the Village</li>
+<li><strong>Various pop-ups:</strong> The First Thursday Art Walk (see our <a href="/blog/first-thursday-art-walk.html">Art Walk guide</a>) often features live musicians throughout the Village</li>
 </ul>
 <h2>Nightlife Itineraries</h2>
 <h3>The Upscale Night</h3>
@@ -747,7 +747,7 @@ const blogPosts = [
 <h3>The Pub Crawl</h3>
 <p>Brian O'Neill's for a pint → Ginger Man for craft beer → Little Woodrow's for the party → D&T to close it out</p>
 <h3>The Date Night</h3>
-<p>Dinner at Prego → Cocktails at The Kirby Club → Walk through Rice University campus under the stars</p>
+<p>Dinner at Prego → Cocktails at The Kirby Club → Walk through <a href="https://www.rice.edu" target="_blank" rel="noopener">Rice University</a> campus under the stars</p>
 <h2>Nightlife Tips</h2>
 <ul>
 <li><strong>Rideshare:</strong> Always the smart move for a night out. Uber and Lyft are widely available in Rice Village.</li>
