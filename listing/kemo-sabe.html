@@ -43,6 +43,7 @@
     "url": "https://www.kemosabe.com",
     "image": "https://ricevillageshops.com/images/shopping/kemo-sabe.jpg",
     "telephone": "(713) 955-4200",
+    
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "2414 University Blvd",
@@ -73,7 +74,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ricevillageshops.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://ricevillageshops.com/#directory" },
+      { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://ricevillageshops.com/listing/" },
       { "@type": "ListItem", "position": 3, "name": "Kemo Sabe", "item": "https://ricevillageshops.com/listing/kemo-sabe.html" }
     ]
   }
@@ -118,7 +119,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:1.5rem;">
         <a href="/">Home</a>
         <span class="breadcrumb__sep"> / </span>
-        <a href="/#directory">Directory</a>
+        <a href="/listing/">Directory</a>
         <span class="breadcrumb__sep"> / </span>
         <span>Kemo Sabe</span>
       </nav>
@@ -172,8 +173,20 @@
         </div>
       </div>
 
+      <!-- Similar listings (cross-links) -->
+      <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1.5rem;">
+        <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">More Shopping in Rice Village</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
+          <a href="/listing/abejas-boutique.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Abejas Boutique<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
+          <a href="/listing/altard-state.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Altar'd State<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
+          <a href="/listing/ann-taylor.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Ann Taylor<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
+          <a href="/listing/artisan-designs-llc.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Artisan Designs LLC<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Art &amp; Gifts</span></a>
+          <a href="/listing/athleta.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Athleta<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
+        </div>
+      </div>
+
       <div style="margin-top:2rem; text-align:center;">
-        <a href="/#directory" style="color:#166534; font-size:0.85rem; font-weight:600; text-decoration:none;">← Back to Full Directory</a>
+        <a href="/listing/" style="color:#166534; font-size:0.85rem; font-weight:600; text-decoration:none;">← Browse All Rice Village Businesses</a>
       </div>
     </div>
   </main>

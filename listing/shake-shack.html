@@ -43,6 +43,7 @@
     "url": "https://www.shakeshack.com",
     "image": "https://ricevillageshops.com/images/restaurants/shake-shack.jpg",
     "telephone": "(346) 318-2083",
+    "servesCuisine": "Burgers",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "6205 Kirby Dr",
@@ -73,7 +74,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ricevillageshops.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://ricevillageshops.com/#directory" },
+      { "@type": "ListItem", "position": 2, "name": "Directory", "item": "https://ricevillageshops.com/listing/" },
       { "@type": "ListItem", "position": 3, "name": "Shake Shack", "item": "https://ricevillageshops.com/listing/shake-shack.html" }
     ]
   }
@@ -118,7 +119,7 @@
       <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom:1.5rem;">
         <a href="/">Home</a>
         <span class="breadcrumb__sep"> / </span>
-        <a href="/#directory">Directory</a>
+        <a href="/listing/">Directory</a>
         <span class="breadcrumb__sep"> / </span>
         <span>Shake Shack</span>
       </nav>
@@ -172,8 +173,20 @@
         </div>
       </div>
 
+      <!-- Similar listings (cross-links) -->
+      <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1.5rem;">
+        <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">More Restaurant in Rice Village</h2>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
+          <a href="/listing/hopdoddy-burger-bar.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Hopdoddy Burger Bar<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Burgers</span></a>
+          <a href="/listing/southwells-hamburger-grill.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Southwell's Hamburger Grill<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Burgers</span></a>
+          <a href="/listing/hopdoddy-burger-bar.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Hopdoddy Burger Bar<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Burgers</span></a>
+          <a href="/listing/torchys-tacos.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Torchy's Tacos<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
+          <a href="/listing/antonios-mexican-grille.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Antonios Mexican Grille<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
+        </div>
+      </div>
+
       <div style="margin-top:2rem; text-align:center;">
-        <a href="/#directory" style="color:#166534; font-size:0.85rem; font-weight:600; text-decoration:none;">← Back to Full Directory</a>
+        <a href="/listing/" style="color:#166534; font-size:0.85rem; font-weight:600; text-decoration:none;">← Browse All Rice Village Businesses</a>
       </div>
     </div>
   </main>
