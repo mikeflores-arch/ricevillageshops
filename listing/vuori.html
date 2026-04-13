@@ -124,8 +124,8 @@
         <span>Vuori</span>
       </nav>
 
-      <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
-        <div style="flex:1; min-width:280px;">
+      <div class="listing-layout">
+        <div class="listing-info">
           <span style="display:inline-block; background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; border-radius:9999px; padding:0.25rem 0.75rem; font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Shopping — Activewear</span>
           <h1 style="font-size:2rem; font-weight:800; color:#0f172a; margin:0 0 0.75rem;">Vuori</h1>
           <p style="font-size:1rem; color:#475569; line-height:1.6; margin-bottom:1.5rem;">California-inspired activewear and apparel blending performance with a coastal lifestyle aesthetic.</p>
@@ -146,12 +146,12 @@
           </div>
 
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;">
-            <a href="https://www.vuoriclothing.com" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; background:#166534; color:white; padding:0.6rem 1.2rem; border-radius:0.5rem; font-size:0.85rem; font-weight:600; text-decoration:none;">Visit Website</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Vuori%205515%20Kelvin%20Drive%2C%20Suite%2090%2C%20Houston%2C%20TX%2077005" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; background:white; color:#334155; border:1px solid #cbd5e1; padding:0.6rem 1.2rem; border-radius:0.5rem; font-size:0.85rem; font-weight:600; text-decoration:none;">Get Directions</a>
+            <a href="https://www.vuoriclothing.com" target="_blank" rel="noopener" class="listing-btn listing-btn--primary">Visit Website</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Vuori%205515%20Kelvin%20Drive%2C%20Suite%2090%2C%20Houston%2C%20TX%2077005" target="_blank" rel="noopener" class="listing-btn listing-btn--secondary">Get Directions</a>
           </div>
         </div>
 
-        <div style="flex:0 0 280px;">
+        <div class="listing-image-wrap">
           <img src="/images/shopping/vuori.jpg" alt="Vuori in Rice Village Houston" style="width:100%; border-radius:0.75rem; object-fit:cover; aspect-ratio:4/3; border:1px solid #e2e8f0;" loading="lazy">
         </div>
       </div>
@@ -165,23 +165,23 @@
       <!-- Related blog posts -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">Explore Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          <a href="/blog/holiday-shopping-guide-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Holiday Shopping Guide</a>
-          <a href="/blog/new-openings-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">New Shop Openings</a>
-          <a href="/blog/first-thursday-art-walk.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">First Thursday Art Walk</a>
-          <a href="/blog/rice-village-history.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Rice Village History</a>
+        <div class="listing-grid">
+          <a href="/blog/holiday-shopping-guide-rice-village.html" style="color:#166534;">Holiday Shopping Guide</a>
+          <a href="/blog/new-openings-rice-village.html" style="color:#166534;">New Shop Openings</a>
+          <a href="/blog/first-thursday-art-walk.html" style="color:#166534;">First Thursday Art Walk</a>
+          <a href="/blog/rice-village-history.html" style="color:#166534;">Rice Village History</a>
         </div>
       </div>
 
       <!-- Similar listings (cross-links) -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1.5rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">More Shopping in Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          <a href="/listing/athleta.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Athleta<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
-          <a href="/listing/tasc-performance.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">tasc Performance<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
-          <a href="/listing/lululemon-athletica.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Lululemon Athletica<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
-          <a href="/listing/abejas-boutique.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Abejas Boutique<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
-          <a href="/listing/altard-state.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Altar'd State<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
+        <div class="listing-grid">
+          <a href="/listing/athleta.html">Athleta<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
+          <a href="/listing/tasc-performance.html">tasc Performance<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
+          <a href="/listing/lululemon-athletica.html">Lululemon Athletica<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Activewear</span></a>
+          <a href="/listing/abejas-boutique.html">Abejas Boutique<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
+          <a href="/listing/altard-state.html">Altar'd State<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Women's Fashion</span></a>
         </div>
       </div>
 

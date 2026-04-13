@@ -196,7 +196,7 @@ input { font-family: inherit; }
   display: none;
   flex-direction: column;
   gap: 5px;
-  padding: 8px;
+  padding: 12px;
   margin-left: auto;
 }
 
@@ -266,7 +266,7 @@ input { font-family: inherit; }
 
 .mobile-menu__link {
   display: block;
-  padding: 14px 16px;
+  padding: 18px 24px;
   font-size: 1.125rem;
   font-weight: 500;
   color: var(--color-text);
@@ -2684,4 +2684,172 @@ input { font-family: inherit; }
 }
 .ad-container ins {
   display: block;
+}
+
+/* ========================================
+   LISTING PAGES — MOBILE RESPONSIVE
+   ======================================== */
+.listing-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.listing-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.listing-image-wrap {
+  flex: 0 0 280px;
+}
+
+.listing-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+.listing-btn--primary {
+  background: #166534;
+  color: white;
+}
+
+.listing-btn--secondary {
+  background: white;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.listing-grid a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.listing-grid a:hover {
+  border-color: #166534;
+}
+
+/* Hub page category pills */
+.listing-cat-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.listing-cat-pills a {
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-decoration: none;
+  color: #334155;
+  font-size: 0.85rem;
+  font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Hub page listing items */
+.listing-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.25rem;
+}
+
+.listing-hub-grid a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #0f172a;
+  min-height: 44px;
+  transition: background 0.15s;
+}
+
+.listing-hub-grid a:hover {
+  background: #f1f5f9;
+}
+
+/* Featured listings on homepage */
+.featured-listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.featured-listings-grid a {
+  padding: 1rem 1.25rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.85rem;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.featured-listings-grid a:hover {
+  border-color: #166534;
+}
+
+@media (max-width: 640px) {
+  .listing-layout {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .listing-image-wrap {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .listing-image-wrap img {
+    aspect-ratio: 16/9;
+  }
+
+  .listing-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-listings-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .featured-listings-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -282,8 +282,8 @@ function generatePage(listing) {
         <span>${escHtml(listing.name)}</span>
       </nav>
 
-      <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
-        <div style="flex:1; min-width:280px;">
+      <div class="listing-layout">
+        <div class="listing-info">
           <span style="display:inline-block; background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; border-radius:9999px; padding:0.25rem 0.75rem; font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">${catLabel}${listing.subcategory ? ' — ' + escHtml(listing.subcategory) : ''}</span>
           <h1 style="font-size:2rem; font-weight:800; color:#0f172a; margin:0 0 0.75rem;">${escHtml(listing.name)}</h1>
           <p style="font-size:1rem; color:#475569; line-height:1.6; margin-bottom:1.5rem;">${escHtml(listing.description)}</p>
@@ -304,12 +304,12 @@ function generatePage(listing) {
           </div>
 
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;">
-            ${listing.website ? `<a href="${listing.website}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; background:#166534; color:white; padding:0.6rem 1.2rem; border-radius:0.5rem; font-size:0.85rem; font-weight:600; text-decoration:none;">Visit Website</a>` : ''}
-            <a href="${mapUrl}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; background:white; color:#334155; border:1px solid #cbd5e1; padding:0.6rem 1.2rem; border-radius:0.5rem; font-size:0.85rem; font-weight:600; text-decoration:none;">Get Directions</a>
+            ${listing.website ? `<a href="${listing.website}" target="_blank" rel="noopener" class="listing-btn listing-btn--primary">Visit Website</a>` : ''}
+            <a href="${mapUrl}" target="_blank" rel="noopener" class="listing-btn listing-btn--secondary">Get Directions</a>
           </div>
         </div>
 
-        <div style="flex:0 0 280px;">
+        <div class="listing-image-wrap">
           <img src="/${image}" alt="${escHtml(listing.name)} in Rice Village Houston" style="width:100%; border-radius:0.75rem; object-fit:cover; aspect-ratio:4/3; border:1px solid #e2e8f0;" loading="lazy">
         </div>
       </div>
@@ -323,16 +323,16 @@ function generatePage(listing) {
       <!-- Related blog posts -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">Explore Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          ${relatedBlogs.map(b => `<a href="/blog/${b.slug}.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">${b.title}</a>`).join('\n          ')}
+        <div class="listing-grid">
+          ${relatedBlogs.map(b => `<a href="/blog/${b.slug}.html" style="color:#166534;">${b.title}</a>`).join('\n          ')}
         </div>
       </div>
 
       <!-- Similar listings (cross-links) -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1.5rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">More ${catLabel} in Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          ${getSimilarListings(listing, 5).map(s => `<a href="/listing/${s.slug}.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">${escHtml(s.name)}${s.subcategory ? '<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">' + escHtml(s.subcategory) + '</span>' : ''}</a>`).join('\n          ')}
+        <div class="listing-grid">
+          ${getSimilarListings(listing, 5).map(s => `<a href="/listing/${s.slug}.html">${escHtml(s.name)}${s.subcategory ? '<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">' + escHtml(s.subcategory) + '</span>' : ''}</a>`).join('\n          ')}
         </div>
       </div>
 
@@ -439,7 +439,7 @@ function buildCategorySection(cat) {
   if (!items.length) return '';
   const label = CATEGORY_LABELS[cat];
   const rows = items.map(l =>
-    `        <a href="/listing/${l.slug}.html" style="display:flex; align-items:center; gap:0.75rem; padding:0.6rem 0.75rem; border-radius:0.5rem; text-decoration:none; color:#0f172a; transition:background 0.15s;" onmouseover="this.style.background='#f1f5f9'" onmouseout="this.style.background='transparent'">
+    `        <a href="/listing/${l.slug}.html">
           <span style="font-size:0.9rem; font-weight:600;">${escHtml(l.name)}</span>
           ${l.subcategory ? `<span style="font-size:0.75rem; color:#64748b;">· ${escHtml(l.subcategory)}</span>` : ''}
         </a>`
@@ -448,7 +448,7 @@ function buildCategorySection(cat) {
   return `
       <section style="margin-bottom:2.5rem;" id="${cat}">
         <h2 style="font-size:1.25rem; font-weight:700; color:#0f172a; border-bottom:2px solid #166534; padding-bottom:0.5rem; margin-bottom:1rem;">${label} <span style="font-size:0.85rem; font-weight:400; color:#64748b;">(${items.length})</span></h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:0.25rem;">
+        <div class="listing-hub-grid">
 ${rows}
         </div>
       </section>`;
@@ -542,8 +542,8 @@ ${[...slugs].slice(0, 50).map((s, i) => {
       <p style="font-size:1rem; color:#475569; margin-bottom:0.5rem;">Every restaurant, bar, coffee shop, boutique, and museum in Houston's oldest shopping district.</p>
       <p style="font-size:0.85rem; color:#94a3b8; margin-bottom:2rem;">${slugs.size} businesses · Est. 1937 · Houston, TX 77005</p>
 
-      <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem;">
-        ${catOrder.map(c => `<a href="#${c}" style="padding:0.5rem 1rem; border-radius:9999px; border:1px solid #e2e8f0; background:#f8fafc; text-decoration:none; color:#334155; font-size:0.85rem; font-weight:600;">${CATEGORY_LABELS[c]} (${categorized[c].length})</a>`).join('\n        ')}
+      <div class="listing-cat-pills" style="margin-bottom:2rem;">
+        ${catOrder.map(c => `<a href="#${c}">${CATEGORY_LABELS[c]} (${categorized[c].length})</a>`).join('\n        ')}
       </div>
 
       <!-- Ad -->

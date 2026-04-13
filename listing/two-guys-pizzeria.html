@@ -124,8 +124,8 @@
         <span>Two Guys Pizzeria</span>
       </nav>
 
-      <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
-        <div style="flex:1; min-width:280px;">
+      <div class="listing-layout">
+        <div class="listing-info">
           <span style="display:inline-block; background:#f0fdf4; color:#166534; border:1px solid #bbf7d0; border-radius:9999px; padding:0.25rem 0.75rem; font-size:0.7rem; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">Restaurant — Pizza</span>
           <h1 style="font-size:2rem; font-weight:800; color:#0f172a; margin:0 0 0.75rem;">Two Guys Pizzeria</h1>
           <p style="font-size:1rem; color:#475569; line-height:1.6; margin-bottom:1.5rem;">New York-style pizza with hand-tossed dough and classic Italian-American dishes.</p>
@@ -144,11 +144,11 @@
 
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;">
             
-            <a href="https://www.google.com/maps/search/?api=1&query=Two%20Guys%20Pizzeria%202435%20University%20Blvd%2C%20Houston%2C%20TX%2077005" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:0.4rem; background:white; color:#334155; border:1px solid #cbd5e1; padding:0.6rem 1.2rem; border-radius:0.5rem; font-size:0.85rem; font-weight:600; text-decoration:none;">Get Directions</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Two%20Guys%20Pizzeria%202435%20University%20Blvd%2C%20Houston%2C%20TX%2077005" target="_blank" rel="noopener" class="listing-btn listing-btn--secondary">Get Directions</a>
           </div>
         </div>
 
-        <div style="flex:0 0 280px;">
+        <div class="listing-image-wrap">
           <img src="/images/restaurants/two-guys-pizzeria.jpg" alt="Two Guys Pizzeria in Rice Village Houston" style="width:100%; border-radius:0.75rem; object-fit:cover; aspect-ratio:4/3; border:1px solid #e2e8f0;" loading="lazy">
         </div>
       </div>
@@ -162,23 +162,23 @@
       <!-- Related blog posts -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">Explore Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          <a href="/blog/brunch-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Best Brunch in Rice Village</a>
-          <a href="/blog/cheap-eats-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Cheap Eats Under $15</a>
-          <a href="/blog/date-night-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Date Night Restaurants</a>
-          <a href="/blog/houston-restaurant-weeks-rice-village.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#166534; font-size:0.85rem; font-weight:600; transition:border-color 0.2s;">Houston Restaurant Weeks</a>
+        <div class="listing-grid">
+          <a href="/blog/brunch-rice-village.html" style="color:#166534;">Best Brunch in Rice Village</a>
+          <a href="/blog/cheap-eats-rice-village.html" style="color:#166534;">Cheap Eats Under $15</a>
+          <a href="/blog/date-night-rice-village.html" style="color:#166534;">Date Night Restaurants</a>
+          <a href="/blog/houston-restaurant-weeks-rice-village.html" style="color:#166534;">Houston Restaurant Weeks</a>
         </div>
       </div>
 
       <!-- Similar listings (cross-links) -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1.5rem;">
         <h2 style="font-size:1.1rem; font-weight:700; color:#0f172a; margin-bottom:1rem;">More Restaurant in Rice Village</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:0.75rem;">
-          <a href="/listing/cicis-pizza.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">CiCi's Pizza<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Pizza</span></a>
-          <a href="/listing/la-fresca-pizza.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">La Fresca Pizza<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Pizza</span></a>
-          <a href="/listing/torchys-tacos.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Torchy's Tacos<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
-          <a href="/listing/antonios-mexican-grille.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Antonios Mexican Grille<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
-          <a href="/listing/azuma.html" style="display:block; padding:0.75rem 1rem; background:#f8fafc; border:1px solid #e2e8f0; border-radius:0.5rem; text-decoration:none; color:#0f172a; font-size:0.85rem; font-weight:600;">Azuma<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Japanese</span></a>
+        <div class="listing-grid">
+          <a href="/listing/cicis-pizza.html">CiCi's Pizza<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Pizza</span></a>
+          <a href="/listing/la-fresca-pizza.html">La Fresca Pizza<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Pizza</span></a>
+          <a href="/listing/torchys-tacos.html">Torchy's Tacos<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
+          <a href="/listing/antonios-mexican-grille.html">Antonios Mexican Grille<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Mexican</span></a>
+          <a href="/listing/azuma.html">Azuma<span style="display:block; font-size:0.75rem; font-weight:400; color:#64748b; margin-top:0.15rem;">Japanese</span></a>
         </div>
       </div>
 
