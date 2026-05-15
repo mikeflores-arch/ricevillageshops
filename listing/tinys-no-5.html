@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MSPTB0HJ97');
-  </script>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +33,7 @@
     "@type": "Restaurant",
     "name": "Tiny's No. 5",
     "description": "Charming neighborhood spot with a seasonal American menu and lovely patio.",
-    "url": "https://www.tinysno5.com",
+    "url": "https://tinyboxwoods.com/location/tinys-no-5/",
     "image": "https://ricevillageshops.com/images/restaurants/tinys-no-5.jpg",
     "telephone": "(713) 529-0100",
     "servesCuisine": "American",
@@ -84,7 +77,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header" id="header">
@@ -141,12 +133,12 @@
             </div>
             <div style="display:flex; align-items:center; gap:0.5rem; color:#334155; font-size:0.9rem;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              <a href="https://www.tinysno5.com" target="_blank" rel="noopener" style="color:#166534; text-decoration:none;">tinysno5.com</a>
+              <a href="https://tinyboxwoods.com/location/tinys-no-5/" target="_blank" rel="noopener" style="color:#166534; text-decoration:none;">tinyboxwoods.com/location/tinys-no-5</a>
             </div>
           </div>
 
           <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:2rem;">
-            <a href="https://www.tinysno5.com" target="_blank" rel="noopener" class="listing-btn listing-btn--primary">Visit Website</a>
+            <a href="https://tinyboxwoods.com/location/tinys-no-5/" target="_blank" rel="noopener" class="listing-btn listing-btn--primary">Visit Website</a>
             <a href="https://www.google.com/maps/search/?api=1&query=Tiny's%20No.%205%203636%20Rice%20Blvd%2C%20Houston%2C%20TX%2077005" target="_blank" rel="noopener" class="listing-btn listing-btn--secondary">Get Directions</a>
           </div>
         </div>
@@ -200,7 +192,7 @@
         </div>
         <div class="footer__links">
           <h4 class="footer__heading">Quick Links</h4>
-          <ul><li><a href="/">Home</a></li><li><a href="/#map-section">Map</a></li><li><a href="/#directory">Directory</a></li><li><a href="/blog.html">Blog</a></li></ul>
+          <ul><li><a href="/">Home</a></li><li><a href="/#map-section">Map</a></li><li><a href="/#directory">Directory</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul>
         </div>
         <div class="footer__contact">
           <h4 class="footer__heading">Contact</h4>
@@ -218,5 +210,47 @@
     var mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', function(){ hamburger.classList.toggle('active'); mobileMenu.classList.toggle('active'); });
   </script>
+<!-- Cookie Consent Banner -->
+<div class="cookie-consent" id="cookieConsent">
+  <p>We use cookies for analytics and personalized ads. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-consent__buttons">
+    <button class="cookie-consent__btn cookie-consent__btn--accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-consent__btn cookie-consent__btn--reject" onclick="rejectCookies()">Reject</button>
+  </div>
+</div>
+<script>
+function loadGA4(){
+  var s=document.createElement("script");
+  s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97";
+  document.head.appendChild(s);
+  s.onload=function(){
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag("js",new Date());
+    gtag("config","G-MSPTB0HJ97");
+  };
+}
+function loadAdSense(){
+  var s=document.createElement("script");
+  s.async=true;s.crossOrigin="anonymous";
+  s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071";
+  document.head.appendChild(s);
+}
+function acceptCookies(){
+  localStorage.setItem("cookieConsent","accepted");
+  document.getElementById("cookieConsent").classList.remove("active");
+  loadGA4();loadAdSense();
+}
+function rejectCookies(){
+  localStorage.setItem("cookieConsent","rejected");
+  document.getElementById("cookieConsent").classList.remove("active");
+}
+(function(){
+  var consent=localStorage.getItem("cookieConsent");
+  if(consent==="accepted"){loadGA4();loadAdSense();}
+  else if(!consent){document.getElementById("cookieConsent").classList.add("active");}
+})();
+</script>
 </body>
 </html>

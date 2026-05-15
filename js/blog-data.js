@@ -1345,6 +1345,103 @@ const blogPosts = [
     author: "Rice Village Shops",
     date: "2026-04-13",
     readTime: "4 min read"
+  },
+  {
+    slug: "best-restaurants-rice-village",
+    title: "The 10 Best Restaurants in Rice Village, Houston — A Local's Guide",
+    excerpt: "From upscale Italian to creative Tex-Mex, these are the must-try restaurants in Rice Village — Houston's most walkable dining district.",
+    content: `<p>Rice Village is one of Houston's most walkable neighborhoods, and its dining scene is one of the best reasons to visit. With over a dozen restaurants packed into a few tree-lined blocks, you can find everything from upscale Italian to creative Tex-Mex to Mediterranean mezze — all without moving your car. Here are the <strong>10 best restaurants in Rice Village</strong> that every Houstonian should know.</p>
+<h2 id="top-10-restaurants-in-rice-village">The Top 10 Restaurants in Rice Village</h2>
+<h3>1. Helen Greek Food &amp; Wine</h3>
+<p><strong><a href="/listing/helen-greek-food-and-wine.html">Helen Greek Food &amp; Wine</a></strong> is a standout for Mediterranean cuisine in Houston. Chef William Wright brings modern Greek flavors to life with dishes like grilled octopus, lamb chops, and an outstanding selection of Greek wines. The warm, airy interior and attentive service make it a top pick for date nights and special occasions.</p>
+<h3>2. Torchy's Tacos</h3>
+<p>No Rice Village restaurant list is complete without <strong><a href="/listing/torchys-tacos.html">Torchy's Tacos</a></strong>. Known for bold, creative taco combinations, Torchy's serves up favorites like the Trailer Park (fried chicken, green chiles, lettuce, and queso) alongside a rotating Taco of the Month. It's fast, flavorful, and always packed for a reason.</p>
+<h3>3. Prego</h3>
+<p><strong><a href="/listing/prego.html">Prego</a></strong> has been a Rice Village institution for decades, serving classic Italian dishes in a warm, inviting setting. Their handmade pastas, wood-fired pizzas, and tiramisu are legendary among regulars. If you're craving dependable Italian comfort food, Prego delivers every time.</p>
+<h3>4. Coppa Osteria</h3>
+<p><strong><a href="/listing/coppa-osteria.html">Coppa Osteria</a></strong> takes Italian dining in a more contemporary direction with an emphasis on seasonal ingredients and house-made charcuterie. The shareable plates, wood-fired pizzas, and impressive wine list make it ideal for groups or a leisurely dinner for two.</p>
+<h3>5. Hamsa</h3>
+<p><strong><a href="/listing/hamsa.html">Hamsa</a></strong> brings vibrant Middle Eastern and North African flavors to Rice Village. The hummus is silky smooth, the lamb kebabs are perfectly spiced, and the cocktail menu draws inspiration from the spice route. The stylish interior feels like a modern Tel Aviv hotspot.</p>
+<h3>6. Tiny's No. 5</h3>
+<p><strong><a href="/listing/tinys-no-5.html">Tiny's No. 5</a></strong> is a neighborhood gem with a European bistro vibe. Known for excellent brunch, craft cocktails, and a charming sidewalk patio, Tiny's is the kind of place where you settle in for hours. Their weekend brunch with mimosa carafes is a Rice Village tradition.</p>
+<h3>7. El Topo</h3>
+<p><strong><a href="/listing/el-topo.html">El Topo</a></strong> serves modern Mexican cuisine with bold, creative twists. The tableside guacamole is a must-order, and the frozen margaritas are among the best in the neighborhood. With colorful decor, string lights, and a lively patio, El Topo brings the energy every night of the week.</p>
+<h3>8. True Food Kitchen</h3>
+<p><strong><a href="/listing/true-food-kitchen.html">True Food Kitchen</a></strong> is the go-to for health-conscious diners who refuse to sacrifice flavor. Their seasonal menu features nutrient-rich bowls, responsibly sourced proteins, and creative vegetable dishes. The bright, airy space and extensive juice and cocktail menu make it a refreshing change of pace.</p>
+<h3>9. Hillstone Restaurant</h3>
+<p><strong><a href="/listing/hillstone-restaurant.html">Hillstone Restaurant</a></strong> is known for consistently excellent American cuisine in a polished setting. Their famous spinach-artichoke dip, perfectly grilled steaks, and Thai-style noodle salad have earned a devoted following. Expect a wait during peak hours — they don't take reservations, but the food is worth it.</p>
+<h3>10. Hobbit Cafe</h3>
+<p><strong><a href="/listing/hobbit-cafe.html">Hobbit Cafe</a></strong> is one of Rice Village's most beloved hidden gems. Tucked behind a garden entrance with Tolkien-themed decor, Hobbit Cafe serves hearty sandwiches, burgers, and an excellent selection of vegetarian dishes. It's quirky, charming, and unlike anything else in Houston.</p>
+<h2 id="tips-for-dining-in-rice-village">Tips for Dining in Rice Village</h2>
+<ul>
+<li><strong>Walk between restaurants:</strong> Everything on this list is within a 10-minute walk. Park once and explore on foot.</li>
+<li><strong>Make reservations:</strong> Helen Greek, Coppa Osteria, and Prego can fill up on weekends. Book ahead on Friday and Saturday nights.</li>
+<li><strong>Try happy hour:</strong> Many Rice Village restaurants offer weekday happy hour specials from 3-6 PM with discounted drinks and appetizers (see our <a href="/blog/happy-hour-guide-rice-village.html">Happy Hour Guide</a>).</li>
+<li><strong>Explore beyond dinner:</strong> Several spots on this list — especially Tiny's No. 5 and True Food Kitchen — shine at brunch too.</li>
+</ul>
+<h2 id="faq-dining-rice-village">Frequently Asked Questions About Dining in Rice Village</h2>
+<h3>What is the best restaurant in Rice Village for date night?</h3>
+<p>Helen Greek Food &amp; Wine and Coppa Osteria are top picks for a romantic evening, with intimate atmospheres and curated wine lists. Tiny's No. 5 is also a popular choice with its charming European-style patio (see our <a href="/blog/date-night-rice-village.html">date night guide</a>).</p>
+<h3>What is the best Tex-Mex restaurant in Rice Village?</h3>
+<p>Torchy's Tacos is the go-to for creative Tex-Mex tacos, while El Topo offers a more upscale modern Mexican experience with handcrafted margaritas and tableside guacamole.</p>
+<h3>Are there family-friendly restaurants in Rice Village?</h3>
+<p>Absolutely. Torchy's Tacos, True Food Kitchen, and Hobbit Cafe all welcome families with casual atmospheres and kid-friendly options.</p>
+<h3>Do you need reservations at Rice Village restaurants?</h3>
+<p>Reservations are recommended for Helen Greek, Coppa Osteria, and Prego on weekends. More casual spots like Torchy's and Hobbit Cafe are walk-in friendly.</p>
+<p><strong>Related:</strong> Discover the <a href="/blog/cheap-eats-rice-village.html">best cheap eats in Rice Village</a>, or plan a full evening with our <a href="/blog/happy-hour-guide-rice-village.html">happy hour guide</a> and <a href="/blog/date-night-rice-village.html">date night picks</a>.</p>`,
+    category: "food-drink",
+    tags: ["restaurants", "dining", "rice village", "houston food", "date night", "tex-mex", "italian"],
+    image: "images/blog/best-restaurants.jpg",
+    author: "Rice Village Shops",
+    date: "2026-04-08",
+    readTime: "6 min read"
+  },
+  {
+    slug: "hidden-gems-rice-village",
+    title: "Rice Village Hidden Gems — 8 Local Favorites Most Visitors Miss",
+    excerpt: "Skip the chains and discover the under-the-radar shops, cafes, and restaurants that make Rice Village a true Houston neighborhood.",
+    content: `<p>Everyone knows Rice Village for its popular restaurants and trendy boutiques, but the real magic of this Houston neighborhood lies in the places most visitors walk right past. These <strong>8 hidden gems</strong> are the spots that locals swear by — the kind of places you only discover after spending real time in the Village.</p>
+<h2 id="8-hidden-gems-in-rice-village">8 Under-the-Radar Spots Worth Discovering</h2>
+<h3>1. Hobbit Cafe</h3>
+<p><strong><a href="/listing/hobbit-cafe.html">Hobbit Cafe</a></strong> is tucked behind a garden entrance that most people walk right past. Step through the gate and you'll find a Tolkien-themed restaurant with a devoted following. The menu covers everything from hearty burgers to an impressive vegetarian selection, and the whimsical decor — complete with Lord of the Rings references — makes every visit feel like an adventure. It's been a Rice Village institution since 1972.</p>
+<h3>2. Siphon Coffee</h3>
+<p><strong><a href="/listing/siphon-coffee.html">Siphon Coffee</a></strong> is a specialty coffee shop that takes its name from the Japanese siphon brewing method. If you're tired of the same espresso-and-latte routine, this is where to go. The baristas treat each cup like a craft, using single-origin beans and precise temperatures. It's small, it's quiet, and the coffee is exceptional.</p>
+<h3>3. Cafe Lili</h3>
+<p><strong><a href="/#directory">Cafe Lili</a></strong> brings a taste of the Middle East to Rice Village with rich Turkish coffee, flaky baklava, and savory bites like falafel wraps and lamb shawarma. The cozy interior and friendly owners make it feel like a neighborhood secret. Come for the coffee, stay for the hospitality.</p>
+<h3>4. Istanbul Grill &amp; Deli</h3>
+<p><strong><a href="/listing/istanbul-grill-and-deli.html">Istanbul Grill &amp; Deli</a></strong> serves authentic Turkish cuisine at prices that feel almost too good. Generous kebab platters, fresh-baked pide (Turkish flatbread), and creamy hummus are served in a no-frills setting that puts the focus squarely on the food. Regulars know to order the lamb adana kebab and the house-made lentil soup.</p>
+<h3>5. The Briar Shoppe</h3>
+<p><strong><a href="/listing/the-briar-shoppe.html">The Briar Shoppe</a></strong> is a throwback to a different era. This classic tobacco and gift shop has been in Rice Village for decades, selling fine cigars, pipes, and unique gifts in a wood-paneled interior that smells like history. Whether you're a cigar enthusiast or just curious, it's worth a visit for the atmosphere alone.</p>
+<h3>6. Crossroads Trading</h3>
+<p><strong><a href="/listing/crossroads-trading.html">Crossroads Trading</a></strong> is a buy-sell-trade clothing shop where you can find on-trend secondhand fashion at a fraction of retail prices. It's popular with Rice University students looking for deals, and the constantly rotating inventory means there's always something new to discover. Bring your old clothes and walk out with a refreshed wardrobe.</p>
+<h3>7. Fellini Caffe</h3>
+<p><strong><a href="/listing/fellini-caffe.html">Fellini Caffe</a></strong> is an Italian-inspired cafe with a shaded courtyard that feels a world away from Houston's bustle. The espresso is rich and perfectly pulled, the pastries are fresh daily, and the relaxed vibe makes it the perfect spot to slow down with a book or a friend. It's a favorite among locals who've been coming here for years (see our <a href="/blog/best-coffee-shops-rice-village.html">coffee crawl guide</a>).</p>
+<h3>8. Half Price Books</h3>
+<p><strong><a href="/listing/half-price-books.html">Half Price Books</a></strong> is a treasure trove for readers, vinyl collectors, and bargain hunters. The Rice Village location has an especially well-curated selection of used books, plus DVDs, board games, and records. You can easily lose an hour browsing the stacks — and walk out with an armful of finds for under twenty dollars.</p>
+<h2 id="tips-exploring-rice-village-on-foot">Tips for Exploring Rice Village on Foot</h2>
+<ul>
+<li><strong>Start on Kirby Drive:</strong> The main corridor has the highest concentration of shops, but turn down any side street and you'll find more hidden spots.</li>
+<li><strong>Go on a weekday:</strong> Weekday mornings and early afternoons are the quietest times to explore without crowds.</li>
+<li><strong>Look for courtyards:</strong> Many Rice Village gems are set back from the street behind garden gates and courtyards. Don't be afraid to wander off the main path.</li>
+<li><strong>Combine stops:</strong> All 8 spots on this list are within walking distance of each other. Park once and make an afternoon of it.</li>
+<li><strong>Talk to shop owners:</strong> The best part of these hidden gems is the people running them. Ask for recommendations — they know the neighborhood better than anyone.</li>
+</ul>
+<h2 id="faq-hidden-gems-rice-village">Frequently Asked Questions</h2>
+<h3>What are the best hidden gems in Rice Village?</h3>
+<p>Hobbit Cafe, Siphon Coffee, The Briar Shoppe, and Istanbul Grill &amp; Deli are among the most beloved local favorites that visitors often miss. Each offers something unique you won't find at the more well-known spots.</p>
+<h3>Is Rice Village good for walking and exploring?</h3>
+<p>Yes — Rice Village is one of Houston's most walkable neighborhoods. The entire district spans just a few blocks, with tree-lined sidewalks and shaded courtyards that make it easy to explore on foot (see our <a href="/blog/rice-village-history.html">history of Rice Village</a>).</p>
+<h3>Are there thrift and vintage shops in Rice Village?</h3>
+<p>Crossroads Trading and Half Price Books both offer affordable secondhand shopping. For more vintage finds, check out our <a href="/blog/vintage-thrift-rice-village.html">vintage and thrift guide</a>.</p>
+<h3>What unique coffee shops are in Rice Village?</h3>
+<p>Siphon Coffee (Japanese siphon brewing), Cafe Lili (Turkish coffee), and Fellini Caffe (Italian espresso) are all specialty coffee spots worth seeking out beyond the typical chains.</p>
+<p><strong>Related:</strong> Dive deeper into the neighborhood with our <a href="/blog/rice-village-history.html">Rice Village history guide</a>, or fuel your exploration with the <a href="/blog/best-coffee-shops-rice-village.html">best coffee shops in the Village</a>.</p>`,
+    category: "guides",
+    tags: ["hidden gems", "local favorites", "rice village", "off the beaten path", "coffee", "shopping", "restaurants"],
+    image: "images/blog/hidden-gems.jpg",
+    author: "Rice Village Shops",
+    date: "2026-04-03",
+    readTime: "5 min read"
   }
 ];
 

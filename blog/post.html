@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MSPTB0HJ97');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -184,5 +176,47 @@
     loadPost();
   })();
   </script>
+<!-- Cookie Consent Banner -->
+<div class="cookie-consent" id="cookieConsent">
+  <p>We use cookies for analytics and personalized ads. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-consent__buttons">
+    <button class="cookie-consent__btn cookie-consent__btn--accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-consent__btn cookie-consent__btn--reject" onclick="rejectCookies()">Reject</button>
+  </div>
+</div>
+<script>
+function loadGA4(){
+  var s=document.createElement("script");
+  s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97";
+  document.head.appendChild(s);
+  s.onload=function(){
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag("js",new Date());
+    gtag("config","G-MSPTB0HJ97");
+  };
+}
+function loadAdSense(){
+  var s=document.createElement("script");
+  s.async=true;s.crossOrigin="anonymous";
+  s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071";
+  document.head.appendChild(s);
+}
+function acceptCookies(){
+  localStorage.setItem("cookieConsent","accepted");
+  document.getElementById("cookieConsent").classList.remove("active");
+  loadGA4();loadAdSense();
+}
+function rejectCookies(){
+  localStorage.setItem("cookieConsent","rejected");
+  document.getElementById("cookieConsent").classList.remove("active");
+}
+(function(){
+  var consent=localStorage.getItem("cookieConsent");
+  if(consent==="accepted"){loadGA4();loadAdSense();}
+  else if(!consent){document.getElementById("cookieConsent").classList.add("active");}
+})();
+</script>
 </body>
 </html>

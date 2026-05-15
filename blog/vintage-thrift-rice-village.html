@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MSPTB0HJ97');
-  </script>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,14 +68,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071" crossorigin="anonymous"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-7732757886192071",
-      enable_page_level_ads: true
-    });
-  </script>
-
   <!-- AEO: FAQPage -->
   <script type="application/ld+json">
   {
@@ -295,7 +279,7 @@ April 13, 2026
         </div>
         <div class="footer__links">
           <h4 class="footer__heading">Quick Links</h4>
-          <ul><li><a href="/">Home</a></li><li><a href="/#map-section">Map</a></li><li><a href="/#directory">Directory</a></li><li><a href="/blog.html">Blog</a></li></ul>
+          <ul><li><a href="/">Home</a></li><li><a href="/#map-section">Map</a></li><li><a href="/#directory">Directory</a></li><li><a href="/blog.html">Blog</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li></ul>
         </div>
         <div class="footer__links">
           <h4 class="footer__heading">Categories</h4>
@@ -336,5 +320,47 @@ April 13, 2026
     hamburger.addEventListener('click', function(){ hamburger.classList.toggle('active'); mobileMenu.classList.toggle('active'); });
   })();
   </script>
+<!-- Cookie Consent Banner -->
+<div class="cookie-consent" id="cookieConsent">
+  <p>We use cookies for analytics and personalized ads. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-consent__buttons">
+    <button class="cookie-consent__btn cookie-consent__btn--accept" onclick="acceptCookies()">Accept</button>
+    <button class="cookie-consent__btn cookie-consent__btn--reject" onclick="rejectCookies()">Reject</button>
+  </div>
+</div>
+<script>
+function loadGA4(){
+  var s=document.createElement("script");
+  s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-MSPTB0HJ97";
+  document.head.appendChild(s);
+  s.onload=function(){
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag=gtag;
+    gtag("js",new Date());
+    gtag("config","G-MSPTB0HJ97");
+  };
+}
+function loadAdSense(){
+  var s=document.createElement("script");
+  s.async=true;s.crossOrigin="anonymous";
+  s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071";
+  document.head.appendChild(s);
+}
+function acceptCookies(){
+  localStorage.setItem("cookieConsent","accepted");
+  document.getElementById("cookieConsent").classList.remove("active");
+  loadGA4();loadAdSense();
+}
+function rejectCookies(){
+  localStorage.setItem("cookieConsent","rejected");
+  document.getElementById("cookieConsent").classList.remove("active");
+}
+(function(){
+  var consent=localStorage.getItem("cookieConsent");
+  if(consent==="accepted"){loadGA4();loadAdSense();}
+  else if(!consent){document.getElementById("cookieConsent").classList.add("active");}
+})();
+</script>
 </body>
 </html>

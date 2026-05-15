@@ -2853,3 +2853,41 @@ input { font-family: inherit; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ----- Cookie Consent Banner ----- */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 16px 24px;
+  z-index: 99999;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.cookie-consent.active { display: flex; }
+.cookie-consent p { margin: 0; max-width: 680px; }
+.cookie-consent a { color: #93c5fd; text-decoration: underline; }
+.cookie-consent__buttons { display: flex; gap: 10px; flex-shrink: 0; }
+.cookie-consent__btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cookie-consent__btn--accept { background: #2563eb; color: #fff; }
+.cookie-consent__btn--accept:hover { background: #1d4ed8; }
+.cookie-consent__btn--reject { background: #475569; color: #f1f5f9; }
+.cookie-consent__btn--reject:hover { background: #334155; }
