@@ -2960,7 +2960,10 @@ input { font-family: inherit; }
 .sponsor-slot--cta .sponsor-slot__headline {
   margin-bottom: 0.75rem;
 }
-.sponsor-slot--active:hover .sponsor-slot__inner {
+.sponsor-slot__link + .sponsor-slot__link {
+  margin-top: 0.75rem;
+}
+.sponsor-slot__link:hover .sponsor-slot__inner {
   border-color: var(--color-primary);
   box-shadow: 0 2px 12px rgba(37, 99, 235, 0.08);
 }

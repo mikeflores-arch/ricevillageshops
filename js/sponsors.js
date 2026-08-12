@@ -51,7 +51,10 @@
       a.innerHTML = inner;
       slot.appendChild(a);
     } else {
-      slot.innerHTML = inner;
+      var d = document.createElement('div');
+      d.className = 'sponsor-slot__link';
+      d.innerHTML = inner;
+      slot.appendChild(d);
     }
   }
 
@@ -64,15 +67,15 @@
       .catch(function () { return []; })
       .then(function (sponsors) {
         var active = (sponsors || []).filter(function (s) { return s.status === 'active'; });
-        // Random starting offset so pages with fewer slots than sponsors
-        // still rotate every sponsor across visits.
-        var offset = Math.floor(Math.random() * (active.length || 1));
-        slots.forEach(function (slot, i) {
-          if (active.length) {
-            renderSponsor(slot, active[(i + offset) % active.length]);
-          } else {
-            renderCTA(slot);
-          }
+        if (!active.length) {
+          slots.forEach(renderCTA);
+          return;
+        }
+        // Every active sponsor appears on every page: sponsors are dealt
+        // round-robin across the page's slots, stacking when a page has
+        // fewer slots than sponsors (listing/blog pages have one slot).
+        active.forEach(function (s, j) {
+          renderSponsor(slots[j % slots.length], s);
         });
       });
   }
