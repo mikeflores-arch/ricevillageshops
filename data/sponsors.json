@@ -14,5 +14,13 @@
     "image": "/images/sponsors/roof-day.png",
     "website": "https://roof.day",
     "status": "active"
+  },
+  {
+    "name": "Brazos Land & Tree Co.",
+    "headline": "Tree Care, Landscaping & Lawn Service — brazostree.com",
+    "blurb": "Trimming, removal, drainage & sod across Sugar Land and the Houston metro. Locally owned, fully insured, 24/7 storm response.",
+    "image": "/images/sponsors/brazos-tree.webp",
+    "website": "https://brazostree.com",
+    "status": "active"
   }
 ]
