@@ -850,26 +850,30 @@
       // Generate unique ad ID
       const adId = 'ad_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
 
-      // Collect form data
-      const formData = new FormData(advertiseForm);
-      const data = Object.fromEntries(formData.entries());
-      data.ad_id = adId;
-      data.status = 'pending_payment';
-      data.submitted_at = new Date().toISOString();
-      data.image1 = adImageData.image1;
-      if (selectedPkg.value === 'premium') {
-        data.image2 = adImageData.image2;
-      }
+      // Send the order (details + creative) to Netlify Forms so we receive it,
+      // then hand off to Stripe for payment.
+      const submitBtn = advertiseForm.querySelector('[type="submit"]');
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
 
-      // Store in localStorage
-      const ads = JSON.parse(localStorage.getItem('rv_ads') || '[]');
-      ads.push(data);
-      localStorage.setItem('rv_ads', JSON.stringify(ads));
+      const order = new FormData();
+      order.append('form-name', 'sponsor-orders');
+      order.append('ad_id', adId);
+      order.append('package', selectedPkg.value);
+      new FormData(advertiseForm).forEach((v, k) => {
+        if (!(v instanceof File)) order.append(k, v);
+      });
+      const file1 = document.getElementById('adFileInput1');
+      const file2 = document.getElementById('adFileInput2');
+      if (file1 && file1.files[0]) order.append('ad_image', file1.files[0]);
+      if (selectedPkg.value === 'premium' && file2 && file2.files[0]) order.append('banner_image', file2.files[0]);
 
-      // Redirect to Stripe Payment Link
-      const stripeUrl = STRIPE_LINKS[selectedPkg.value];
-      const separator = stripeUrl.includes('?') ? '&' : '?';
-      window.location.href = stripeUrl + separator + 'client_reference_id=' + encodeURIComponent(adId);
+      fetch('/', { method: 'POST', body: order })
+        .catch(() => {}) // payment can proceed even if the order ping fails
+        .finally(() => {
+          const stripeUrl = STRIPE_LINKS[selectedPkg.value];
+          const separator = stripeUrl.includes('?') ? '&' : '?';
+          window.location.href = stripeUrl + separator + 'client_reference_id=' + encodeURIComponent(adId);
+        });
     });
   }
 
@@ -893,23 +897,6 @@
     const params = new URLSearchParams(window.location.search);
     if (params.get('payment_success') !== 'true') return;
 
-    const adId = params.get('ad_id');
-    if (!adId) return;
-
-    // Mark the ad as active in localStorage
-    const ads = JSON.parse(localStorage.getItem('rv_ads') || '[]');
-    let found = false;
-    for (let i = 0; i < ads.length; i++) {
-      if (ads[i].ad_id === adId && ads[i].status === 'pending_payment') {
-        ads[i].status = 'active';
-        found = true;
-        break;
-      }
-    }
-    if (found) {
-      localStorage.setItem('rv_ads', JSON.stringify(ads));
-    }
-
     // Clean the URL
     const cleanUrl = window.location.origin + window.location.pathname;
     window.history.replaceState({}, '', cleanUrl);
@@ -917,79 +904,21 @@
     // Show success toast
     const toast = document.createElement('div');
     toast.className = 'payment-toast';
-    toast.textContent = 'Payment successful! Your ad is now live.';
+    toast.textContent = 'Payment successful! Your sponsorship goes live within 24 hours.';
     document.body.appendChild(toast);
-    setTimeout(() => { if (toast.parentNode) toast.remove(); }, 5000);
+    setTimeout(() => { if (toast.parentNode) toast.remove(); }, 8000);
   }
 
   handlePaymentReturn();
 
-  // ============================================
-  // ACTIVE AD RENDERING
-  // ============================================
-  function renderActiveAds() {
-    const ads = JSON.parse(localStorage.getItem('rv_ads') || '[]');
-    const activeAds = ads.filter(a => a.status === 'active');
-    if (!activeAds.length) return;
-
-    // Find ads for each slot type
-    const sidebarAds = activeAds.filter(a => a.selected_package === 'sidebar' || a.selected_package === 'premium');
-    const bannerAds = activeAds.filter(a => a.selected_package === 'banner' || a.selected_package === 'premium');
-
-    // Populate sidebar slots
-    const sidebar1 = document.getElementById('adSidebar1');
-    const sidebar2 = document.getElementById('adSidebar2');
-    if (sidebar1 && sidebarAds.length > 0) {
-      populateAdSlot(sidebar1, sidebarAds[0].image1, sidebarAds[0].website);
-    }
-    if (sidebar2 && sidebarAds.length > 1) {
-      populateAdSlot(sidebar2, sidebarAds[1].image1, sidebarAds[1].website);
-    }
-
-    // Populate banner slot
-    const banner = document.getElementById('adBanner');
-    if (banner && bannerAds.length > 0) {
-      const ad = bannerAds[0];
-      const imgSrc = ad.selected_package === 'premium' ? ad.image2 : ad.image1;
-      populateAdSlot(banner, imgSrc, ad.website);
-    }
+  // Auto-open the advertise modal when linked with ?advertise=1 (used by sponsor slots sitewide)
+  if (new URLSearchParams(window.location.search).get('advertise')) {
+    setTimeout(() => openFormOverlay('advertiseOverlay'), 300);
   }
 
-  function isValidUrl(url) {
-    try {
-      const parsed = new URL(url);
-      return parsed.protocol === 'https:' || parsed.protocol === 'http:';
-    } catch (e) {
-      return false;
-    }
-  }
-
-  function populateAdSlot(slotContent, imageSrc, linkUrl) {
-    if (!imageSrc) return;
-    const slot = slotContent.closest('.ad-slot');
-    if (slot) {
-      slot.classList.add('ad-slot--active');
-      slot.onclick = null; // remove "openAdvertise" click
-    }
-
-    slotContent.innerHTML = '';
-    const img = document.createElement('img');
-    img.src = imageSrc;
-    img.alt = 'Advertisement';
-
-    if (linkUrl && isValidUrl(linkUrl)) {
-      const a = document.createElement('a');
-      a.href = linkUrl;
-      a.target = '_blank';
-      a.rel = 'noopener sponsored';
-      a.appendChild(img);
-      slotContent.appendChild(a);
-    } else {
-      slotContent.appendChild(img);
-    }
-  }
-
-  renderActiveAds();
+  // NOTE: Public sponsor placements are rendered by js/sponsors.js from
+  // /data/sponsors.json (the old localStorage-based ad rendering only ever
+  // showed ads to the buyer's own browser and was removed).
 
   // ============================================
   // GLOBAL FUNCTIONS (called from HTML onclick)

@@ -197,16 +197,11 @@ function loadGA4(){
     gtag("config","G-MSPTB0HJ97");
   };
 }
-function loadAdSense(){
-  var s=document.createElement("script");
-  s.async=true;s.crossOrigin="anonymous";
-  s.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071";
-  document.head.appendChild(s);
-}
+
 function acceptCookies(){
   localStorage.setItem("cookieConsent","accepted");
   document.getElementById("cookieConsent").classList.remove("active");
-  loadGA4();loadAdSense();
+  loadGA4();
 }
 function rejectCookies(){
   localStorage.setItem("cookieConsent","rejected");
@@ -214,7 +209,7 @@ function rejectCookies(){
 }
 (function(){
   var consent=localStorage.getItem("cookieConsent");
-  if(consent==="accepted"){loadGA4();loadAdSense();}
+  if(consent==="accepted"){loadGA4();}
   else if(!consent){document.getElementById("cookieConsent").classList.add("active");}
 })();
 </script>

@@ -345,7 +345,6 @@ function generateHtml(post) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071" crossorigin="anonymous"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
       google_ad_client: "ca-pub-7732757886192071",
@@ -421,13 +420,6 @@ function generateHtml(post) {
 
     <!-- AD: BETWEEN ARTICLE & RELATED POSTS -->
   <div class="ad-container container">
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-7732757886192071"
-      data-ad-slot="auto"
-      data-ad-format="auto"
-      data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
 <section class="related-posts">

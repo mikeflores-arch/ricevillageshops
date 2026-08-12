@@ -242,7 +242,6 @@ function generatePage(listing) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header" id="header">
@@ -314,11 +313,7 @@ function generatePage(listing) {
         </div>
       </div>
 
-      <!-- Ad placement -->
-      <div style="margin:2rem 0;">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7732757886192071" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </div>
+      <div class="sponsor-slot" data-sponsor-slot></div>
 
       <!-- Related blog posts -->
       <div style="border-top:1px solid #e2e8f0; padding-top:2rem; margin-top:1rem;">
@@ -504,7 +499,6 @@ ${[...slugs].slice(0, 50).map((s, i) => {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7732757886192071" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header" id="header">
@@ -546,11 +540,7 @@ ${[...slugs].slice(0, 50).map((s, i) => {
         ${catOrder.map(c => `<a href="#${c}">${CATEGORY_LABELS[c]} (${categorized[c].length})</a>`).join('\n        ')}
       </div>
 
-      <!-- Ad -->
-      <div style="margin:1.5rem 0;">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7732757886192071" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-      </div>
+      <div class="sponsor-slot" data-sponsor-slot></div>
 
 ${catOrder.map(c => buildCategorySection(c)).join('\n')}
 

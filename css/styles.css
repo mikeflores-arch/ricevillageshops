@@ -2891,3 +2891,76 @@ input { font-family: inherit; }
 .cookie-consent__btn--accept:hover { background: #1d4ed8; }
 .cookie-consent__btn--reject { background: #475569; color: #f1f5f9; }
 .cookie-consent__btn--reject:hover { background: #334155; }
+
+/* ----- Sponsor Slots (replaces AdSense) ----- */
+.sponsor-slot {
+  margin: 2rem auto;
+}
+.sponsor-slot:empty {
+  display: none;
+}
+.sponsor-slot__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.sponsor-slot__inner {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.sponsor-slot__label {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 0.5rem;
+}
+.sponsor-slot__body {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.sponsor-slot__img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+.sponsor-slot__text {
+  min-width: 0;
+  flex: 1;
+}
+.sponsor-slot__headline {
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+.sponsor-slot__blurb {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+}
+.sponsor-slot__btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.sponsor-slot--cta .sponsor-slot__inner {
+  text-align: center;
+  border-style: dashed;
+}
+.sponsor-slot--cta .sponsor-slot__headline {
+  margin-bottom: 0.75rem;
+}
+.sponsor-slot--active:hover .sponsor-slot__inner {
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.08);
+}
