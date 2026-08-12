@@ -6,5 +6,13 @@
     "image": "/images/sponsors/gutter-day.webp",
     "website": "https://gutter.day",
     "status": "active"
+  },
+  {
+    "name": "Roof Repair Company, LLC",
+    "headline": "Storm Damage? Get a Free Roof Inspection — roof.day",
+    "blurb": "GAF Master Elite roofer serving Greater Houston — repair, replacement & insurance claim help. Call (713) 257-8611.",
+    "image": "/images/sponsors/roof-day.png",
+    "website": "https://roof.day",
+    "status": "active"
   }
 ]

@@ -64,9 +64,12 @@
       .catch(function () { return []; })
       .then(function (sponsors) {
         var active = (sponsors || []).filter(function (s) { return s.status === 'active'; });
+        // Random starting offset so pages with fewer slots than sponsors
+        // still rotate every sponsor across visits.
+        var offset = Math.floor(Math.random() * (active.length || 1));
         slots.forEach(function (slot, i) {
           if (active.length) {
-            renderSponsor(slot, active[i % active.length]);
+            renderSponsor(slot, active[(i + offset) % active.length]);
           } else {
             renderCTA(slot);
           }
