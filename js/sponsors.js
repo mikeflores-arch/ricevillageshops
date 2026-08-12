@@ -71,12 +71,23 @@
           slots.forEach(renderCTA);
           return;
         }
-        // Every active sponsor appears on every page: sponsors are dealt
-        // round-robin across the page's slots, stacking when a page has
-        // fewer slots than sponsors (listing/blog pages have one slot).
-        active.forEach(function (s, j) {
-          renderSponsor(slots[j % slots.length], s);
+        // data-sponsor-slot="all" slots (e.g. the homepage listing modal)
+        // always show every active sponsor. Remaining slots have the
+        // sponsors dealt round-robin across them, stacking when a page
+        // has fewer slots than sponsors (listing/blog pages have one).
+        var dealSlots = [];
+        slots.forEach(function (slot) {
+          if (slot.getAttribute('data-sponsor-slot') === 'all') {
+            active.forEach(function (s) { renderSponsor(slot, s); });
+          } else {
+            dealSlots.push(slot);
+          }
         });
+        if (dealSlots.length) {
+          active.forEach(function (s, j) {
+            renderSponsor(dealSlots[j % dealSlots.length], s);
+          });
+        }
       });
   }
 
